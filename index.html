@@ -1,0 +1,1905 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sustainability Career Explorer | Kogod School of Business</title>
+  <meta name="description" content="Explore sustainability career paths with role descriptions, key skills, salary context, Kogod preparation resources, and industry-pivot tips." />
+
+  <style>
+    /* ===================== DESIGN TOKENS ===================== */
+    :root, [data-theme="light"] {
+      --color-bg: #f7f8fb;
+      --color-surface: #ffffff;
+      --color-surface-2: #f3f5fb;
+      --color-surface-offset: #e0e5f5;
+      --color-surface-dynamic: #d9dce3;
+      --color-divider: #d9dce3;
+      --color-border: #8a95a5;
+      --color-text: #182449;
+      --color-text-muted: #4d5871;
+      --color-text-faint: #6f7a90;
+      --color-text-inverse: #ffffff;
+      --color-primary: #007a6a;
+      --color-primary-hover: #006454;
+      --color-primary-active: #00a38d;
+      --color-primary-light: #d9f1ed;
+      --color-accent: #f0df2c;
+      --color-accent-hover: #d8c700;
+      --color-accent-highlight: #fff8a6;
+      /* Kogod/AU brand colors */
+      --color-kogod: #ed193a;
+      --color-kogod-light: #fde7eb;
+      --color-kogod-border: #ed193a;
+      /* Sustainability green from Kogod's secondary palette */
+      --color-pivot: #007a6a;
+      --color-pivot-light: #e4f4f1;
+      --color-pivot-border: #00a38d;
+      /* CliftonStrengths domains */
+      --color-cs-executing: #3c208c;
+      --color-cs-executing-light: #f3e8ff;
+      --color-cs-executing-border: #c4b5fd;
+      --color-cs-influencing: #c8246a;
+      --color-cs-influencing-light: #fbe7f0;
+      --color-cs-influencing-border: #c8246a;
+      --color-cs-relationship: #004fa2;
+      --color-cs-relationship-light: #e2eefb;
+      --color-cs-relationship-border: #6995dd;
+      --color-cs-strategic: #007a6a;
+      --color-cs-strategic-light: #e4f4f1;
+      --color-cs-strategic-border: #00a38d;
+      /* Category colors */
+      --color-cat-ib: #182449;
+      --color-cat-cf: #004fa2;
+      --color-cat-am: #6995dd;
+      --color-cat-rm: #902178;
+      --color-cat-tr: #007a6a;
+      --color-cat-fp: #3c208c;
+      --color-cat-eq: #7a2287;
+      --color-cat-pe: #c8246a;
+      --radius-sm: 0.375rem;
+      --radius-md: 0.5rem;
+      --radius-lg: 0.75rem;
+      --radius-xl: 1rem;
+      --radius-2xl: 1.5rem;
+      --radius-full: 9999px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,0.13);
+      --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem;
+      --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
+      --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem;
+      --space-16: 4rem; --space-20: 5rem;
+      --font-display: 'GT Walsheim', 'Helvetica Neue', Arial, sans-serif;
+      --font-body: 'GT Walsheim', 'Helvetica Neue', Arial, sans-serif;
+      --content-default: 1280px;
+    }
+
+    [data-theme="dark"] {
+      --color-bg: #182449;
+      --color-surface: #101a39;
+      --color-surface-2: #1e2b55;
+      --color-surface-offset: #24335f;
+      --color-surface-dynamic: #30406f;
+      --color-divider: #30406f;
+      --color-border: #6995dd;
+      --color-text: #ffffff;
+      --color-text-muted: #e0e5f5;
+      --color-text-faint: #b8c2d6;
+      --color-text-inverse: #182449;
+      --color-primary: #00a38d;
+      --color-primary-hover: #52c8bb;
+      --color-primary-active: #007a6a;
+      --color-primary-light: #143f49;
+      --color-accent: #f0df2c;
+      --color-accent-hover: #fff46a;
+      --color-accent-highlight: #4a4211;
+      --color-kogod: #ff6f82;
+      --color-kogod-light: #3a1830;
+      --color-kogod-border: #ed193a;
+      --color-pivot: #00a38d;
+      --color-pivot-light: #103a3e;
+      --color-pivot-border: #00a38d;
+      --color-cs-executing: #b9a7ff;
+      --color-cs-executing-light: #251a58;
+      --color-cs-executing-border: #3c208c;
+      --color-cs-influencing: #ff8db6;
+      --color-cs-influencing-light: #3b1830;
+      --color-cs-influencing-border: #c8246a;
+      --color-cs-relationship: #9fc4ff;
+      --color-cs-relationship-light: #132a50;
+      --color-cs-relationship-border: #6995dd;
+      --color-cs-strategic: #51c7b7;
+      --color-cs-strategic-light: #103a3e;
+      --color-cs-strategic-border: #00a38d;
+      --color-cat-ib: #e0e5f5;
+      --color-cat-cf: #6995dd;
+      --color-cat-am: #9fc4ff;
+      --color-cat-rm: #d18bdd;
+      --color-cat-tr: #00a38d;
+      --color-cat-fp: #b9a7ff;
+      --color-cat-eq: #d18bdd;
+      --color-cat-pe: #ff8db6;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.5);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,0.6);
+    }
+    /* ===================== BASE ===================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; scroll-behavior: smooth; }
+    body { min-height: 100dvh; width: 100%; overflow-x: hidden; font-family: var(--font-body); font-size: var(--text-base); color: var(--color-text); background-color: var(--color-bg); line-height: 1.6; }
+    img, svg { display: block; max-width: 100%; }
+    button { cursor: pointer; background: none; border: none; font: inherit; color: inherit; }
+    a, button, [role="button"] { transition: color var(--transition), background var(--transition), border-color var(--transition), box-shadow var(--transition), opacity var(--transition); }
+    :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: var(--radius-sm); }
+    ::selection { background: color-mix(in oklch, var(--color-primary) 20%, transparent); color: var(--color-text); }
+
+    /* ===================== HEADER ===================== */
+    .site-header { position: relative; z-index: 100; background: var(--color-surface); border-bottom: 1px solid var(--color-border); backdrop-filter: blur(12px); }
+    .header-inner { max-width: var(--content-default); margin: 0 auto; padding: var(--space-4) var(--space-6); display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); }
+    .logo { display: flex; align-items: center; gap: var(--space-3); text-decoration: none; color: var(--color-text); }
+    .logo-img { display: block; width: min(260px, 52vw); height: auto; flex-shrink: 0; }
+    .kogod-badge { font-size: var(--text-xs); font-weight: 700; color: var(--color-text-inverse); background: var(--color-primary); border: 1px solid var(--color-primary); padding: 2px var(--space-2); border-radius: var(--radius-full); white-space: nowrap; }
+    .header-actions { display: flex; align-items: center; gap: var(--space-3); }
+    .theme-toggle { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-md); color: var(--color-text-muted); }
+    .theme-toggle:hover { background: var(--color-surface-offset); color: var(--color-text); }
+
+    /* ===================== HERO ===================== */
+    .hero { background: linear-gradient(135deg, #007a6a 0%, #007a6a 62%, #00a38d 100%); padding: clamp(var(--space-6), 4vw, var(--space-10)) var(--space-6); text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); pointer-events: none; }
+    .hero-content { position: relative; max-width: 760px; margin: 0 auto; }
+    .hero-eyebrow { display: inline-flex; align-items: center; gap: var(--space-2); background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.9); font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: var(--space-1) var(--space-3); border-radius: var(--radius-full); margin-bottom: var(--space-3); }
+    .hero h1 { font-family: var(--font-display); font-weight: 800; font-size: var(--text-xl); color: #fff; letter-spacing: -0.02em; line-height: 1.08; margin-bottom: var(--space-3); }
+    .hero h1 em { font-style: normal; color: #fff; text-decoration: underline; text-decoration-color: var(--color-accent); text-decoration-thickness: 0.08em; text-underline-offset: 0.12em; }
+    .hero p { font-size: var(--text-sm); color: rgba(255,255,255,0.75); max-width: 60ch; margin: 0 auto var(--space-3); line-height: 1.55; }
+    .hero-kogod-note { display: inline-block; max-width: 72ch; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15); color: rgba(255,255,255,0.85); font-size: var(--text-xs); font-weight: 500; padding: var(--space-2) var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-4); line-height: 1.45; }
+    .hero-use-note { display: block; max-width: 64ch; margin: var(--space-2) auto 0; color: #fff; font-size: var(--text-xs); font-weight: 700; line-height: 1.5; }
+    .hero-stats { display: flex; justify-content: center; gap: var(--space-5); flex-wrap: wrap; }
+    .hero-stat { text-align: center; }
+    .hero-stat-number { font-family: var(--font-display); font-weight: 800; font-size: var(--text-xl); color: #fff; line-height: 1; }
+    .hero-stat-label { font-size: var(--text-xs); color: rgba(255,255,255,0.6); margin-top: var(--space-1); letter-spacing: 0.05em; text-transform: uppercase; }
+
+    /* ===================== LEGEND ===================== */
+    .legend-bar { background: var(--color-surface); border-bottom: 1px solid var(--color-border); padding: var(--space-3) var(--space-6); }
+    .legend-inner { max-width: var(--content-default); margin: 0 auto; display: flex; align-items: center; gap: var(--space-6); flex-wrap: wrap; }
+    .legend-title { font-size: var(--text-xs); font-weight: 700; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.08em; }
+    .legend-items { display: flex; gap: var(--space-5); flex-wrap: wrap; }
+    .legend-item { display: flex; align-items: center; gap: var(--space-2); font-size: var(--text-xs); color: var(--color-text-muted); }
+    .legend-dot { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+
+    /* ===================== CONTROLS ===================== */
+    .controls-bar { background: var(--color-surface); border-bottom: 1px solid var(--color-border); padding: var(--space-4) var(--space-6); position: relative; z-index: 90; }
+    .controls-inner { max-width: var(--content-default); margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); }
+    .search-wrap { flex: 1; min-width: 200px; max-width: 300px; position: relative; }
+    .search-wrap svg { position: absolute; left: var(--space-3); top: 50%; transform: translateY(-50%); color: var(--color-text-muted); pointer-events: none; }
+    .search-input { width: 100%; padding: var(--space-2) var(--space-3) var(--space-2) 2.25rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-bg); color: var(--color-text); font-size: var(--text-sm); font-family: var(--font-body); }
+    .search-input::placeholder { color: var(--color-text-faint); }
+    .search-input:focus { outline: 2px solid var(--color-primary); border-color: transparent; }
+    .filter-group { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
+    .filter-label { font-size: var(--text-xs); font-weight: 600; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.08em; white-space: nowrap; }
+    .filter-btn { min-height: 44px; padding: var(--space-1) var(--space-3); border-radius: var(--radius-full); border: 1.5px solid var(--color-border); font-size: var(--text-xs); font-weight: 600; color: var(--color-text-muted); background: var(--color-surface); white-space: nowrap; }
+    .filter-btn:hover { border-color: var(--color-primary); color: var(--color-primary); }
+    .filter-btn.active { background: var(--color-primary); border-color: var(--color-primary); color: var(--color-text-inverse); }
+    .sort-wrap { display: flex; align-items: center; gap: var(--space-2); margin-left: auto; }
+    .sort-select { min-height: 44px; padding: var(--space-2) var(--space-8) var(--space-2) var(--space-3); border: 1.5px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); color: var(--color-text); font-size: var(--text-xs); font-family: var(--font-body); font-weight: 500; cursor: pointer; appearance: none; background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 4l4 4 4-4' stroke='%236b7280' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right var(--space-3) center; }
+    .sort-select:focus { outline: 2px solid var(--color-primary); }
+    .results-count { font-size: var(--text-xs); color: var(--color-text-muted); font-weight: 500; }
+
+    /* ===================== MAIN GRID ===================== */
+    .main { max-width: var(--content-default); margin: 0 auto; padding: var(--space-8) var(--space-6) var(--space-20); }
+    .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: var(--space-6); }
+
+    /* ===================== CARD ===================== */
+    .card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition); display: flex; flex-direction: column; }
+    .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--color-primary); }
+    .card.hidden { display: none; }
+
+    /* Card Header */
+    .card-header { padding: var(--space-5) var(--space-5) var(--space-4); border-bottom: 1px solid var(--color-divider); }
+    .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-3); }
+    .card-icon-wrap { width: 48px; height: 48px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.5rem; }
+    .card-category-badge { font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; padding: var(--space-1) var(--space-2); border-radius: var(--radius-sm); }
+    .card-title { font-family: var(--font-display); font-weight: 800; font-size: var(--text-lg); color: var(--color-text); letter-spacing: -0.02em; line-height: 1.2; margin-bottom: var(--space-2); }
+    .card-subtitle { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.5; }
+    .best-for { margin-top: var(--space-3); padding: var(--space-3); border-left: 3px solid var(--color-primary); border-radius: var(--radius-sm); background: var(--color-primary-light); color: var(--color-text); font-size: var(--text-xs); line-height: 1.5; }
+    .best-for strong { color: var(--color-primary); }
+
+    /* Salary Section */
+    .salary-section { padding: var(--space-4) var(--space-5); background: var(--color-surface-2); border-bottom: 1px solid var(--color-divider); }
+    .salary-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--space-3); }
+    .salary-label { font-size: var(--text-xs); font-weight: 600; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.08em; }
+    .salary-total { font-family: var(--font-display); font-weight: 800; font-size: var(--text-lg); color: var(--color-text); }
+    .salary-total span { font-size: var(--text-sm); font-weight: 500; color: var(--color-text-muted); font-family: var(--font-body); }
+    .salary-levels { display: flex; flex-direction: column; gap: var(--space-2); }
+    .salary-row { display: grid; grid-template-columns: 90px 1fr 80px; align-items: center; gap: var(--space-3); font-size: var(--text-xs); }
+    .salary-level-name { color: var(--color-text-muted); font-weight: 500; }
+    .salary-bar-track { height: 6px; background: var(--color-surface-dynamic); border-radius: var(--radius-full); overflow: hidden; }
+    .salary-bar-fill { height: 100%; border-radius: var(--radius-full); }
+    .salary-amount { color: var(--color-text); font-weight: 600; text-align: right; }
+
+    /* Card Body */
+    .card-body { padding: var(--space-4) var(--space-5); flex: 1; }
+    .card-description { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.65; margin-bottom: var(--space-4); }
+    .card-body .card-description:last-child { margin-bottom: 0; }
+    .section-title { font-size: var(--text-xs); font-weight: 700; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--space-2); }
+    .skills-wrap { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-4); }
+    .skill-tag { font-size: var(--text-xs); font-weight: 500; padding: var(--space-1) var(--space-2); border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: var(--color-surface-offset); color: var(--color-text-muted); }
+    .roles-list { display: flex; flex-direction: column; gap: var(--space-1); }
+    .role-item { display: flex; align-items: center; gap: var(--space-2); font-size: var(--text-xs); color: var(--color-text-muted); }
+    .role-item::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: currentColor; flex-shrink: 0; opacity: 0.5; }
+
+    /* Tab system for detail panels */
+    .card-footer { padding: 0; border-top: 1px solid var(--color-divider); }
+    .tab-buttons { display: flex; border-bottom: 1px solid var(--color-divider); }
+    .tab-btn {
+      flex: 1;
+      min-height: 48px;
+      padding: var(--space-3) var(--space-2);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      color: var(--color-text-muted);
+      background: var(--color-surface-2);
+      border: none;
+      border-right: 1px solid var(--color-divider);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-1);
+      transition: background var(--transition), color var(--transition);
+    }
+    .tab-btn:last-child { border-right: none; }
+    .tab-btn:hover { background: var(--color-surface-dynamic); color: var(--color-text); }
+    .tab-btn.active { background: var(--color-surface); color: var(--color-text); }
+    .tab-btn.active.tab-details { color: var(--color-primary); border-bottom: 2px solid var(--color-primary); }
+    .tab-btn.active.tab-kogod { color: var(--color-kogod); border-bottom: 2px solid var(--color-kogod); }
+    .tab-btn.active.tab-pivot { color: var(--color-pivot); border-bottom: 2px solid var(--color-pivot); }
+    .tab-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+
+    /* Tab panels */
+    .tab-panels { display: none; }
+    .tab-panels.open { display: block; padding: var(--space-4) var(--space-5); }
+    .panel-close {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      margin: 0 0 var(--space-3) auto;
+      padding: var(--space-1) var(--space-3);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-full);
+      background: var(--color-surface);
+      color: var(--color-text-muted);
+      font-size: var(--text-xs);
+      font-weight: 700;
+    }
+    .panel-close:hover,
+    .panel-close:focus-visible {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+      background: var(--color-primary-light);
+    }
+    .tab-panel { display: block; }
+    .tab-panel:not(.active) { display: none; }
+    .tab-panel.active { display: block; }
+
+    /* Details panel */
+    .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3) var(--space-4); margin-top: var(--space-2); }
+    .detail-item-label { font-size: var(--text-xs); font-weight: 600; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: var(--space-1); }
+    .detail-item-value { font-size: var(--text-sm); color: var(--color-text); font-weight: 500; }
+    .certs-wrap { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-2); }
+    .cert-tag { font-size: var(--text-xs); font-weight: 600; padding: var(--space-1) var(--space-2); border-radius: var(--radius-sm); background: var(--color-primary-light); color: var(--color-primary); }
+.skills-valued-group{margin-top:var(--space-4)}
+.skills-valued-label{font-size:var(--text-xs);font-weight:600;color:var(--color-text-muted);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:var(--space-2);margin-top:var(--space-3)}
+
+    /* Kogod panel */
+    .kogod-panel { background: var(--color-kogod-light); border-radius: var(--radius-lg); padding: var(--space-4); }
+    .kogod-panel-header { display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3); }
+    .kogod-panel-title { font-family: var(--font-display); font-weight: 700; font-size: var(--text-sm); color: var(--color-kogod); }
+    .kogod-section { margin-bottom: var(--space-4); }
+    .kogod-section:last-child { margin-bottom: 0; }
+    .kogod-section-label { font-size: var(--text-xs); font-weight: 700; color: var(--color-kogod); text-transform: uppercase; letter-spacing: 0.09em; margin-bottom: var(--space-2); display: flex; align-items: center; gap: var(--space-1); }
+    .kogod-tags { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+    .kogod-tag { font-size: var(--text-xs); font-weight: 500; padding: var(--space-1) var(--space-2); border-radius: var(--radius-sm); background: color-mix(in oklch, var(--color-kogod) 10%, var(--color-surface)); border: 1px solid var(--color-kogod-border); color: var(--color-kogod); }
+    [data-theme="dark"] .kogod-tag { background: color-mix(in oklch, var(--color-kogod) 16%, var(--color-surface)); }
+    .kogod-tip { font-size: var(--text-xs); color: var(--color-text-muted); line-height: 1.6; background: var(--color-surface); border-radius: var(--radius-md); padding: var(--space-3); border-left: 3px solid var(--color-kogod); margin-top: var(--space-2); }
+
+    /* Pivot panel */
+    .pivot-panel { background: var(--color-pivot-light); border-radius: var(--radius-lg); padding: var(--space-4); }
+    .pivot-panel-header { display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-3); }
+    .pivot-panel-title { font-family: var(--font-display); font-weight: 700; font-size: var(--text-sm); color: var(--color-pivot); }
+    .pivot-section { margin-bottom: var(--space-4); }
+    .pivot-section:last-child { margin-bottom: 0; }
+    .pivot-section-label { font-size: var(--text-xs); font-weight: 700; color: var(--color-pivot); text-transform: uppercase; letter-spacing: 0.09em; margin-bottom: var(--space-2); }
+    .pivot-tags { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+    .pivot-tag { font-size: var(--text-xs); font-weight: 500; padding: var(--space-1) var(--space-2); border-radius: var(--radius-sm); background: rgba(26,71,49,0.08); border: 1px solid var(--color-pivot-border); color: var(--color-pivot); }
+    [data-theme="dark"] .pivot-tag { background: color-mix(in oklch, var(--color-pivot) 16%, var(--color-surface)); color: var(--color-pivot); }
+    .pivot-tip { font-size: var(--text-xs); color: var(--color-text-muted); line-height: 1.65; background: var(--color-surface); border-radius: var(--radius-md); padding: var(--space-3); border-left: 3px solid var(--color-pivot); }
+    .pivot-steps { list-style: none; display: flex; flex-direction: column; gap: var(--space-2); margin-top: var(--space-2); }
+    .pivot-step { display: flex; gap: var(--space-3); align-items: flex-start; font-size: var(--text-xs); color: var(--color-text-muted); line-height: 1.5; }
+    .pivot-step-num { width: 20px; height: 20px; border-radius: 50%; background: var(--color-pivot); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+    [data-theme="dark"] .pivot-step-num { color: var(--color-text-inverse); }
+
+    /* Empty state */
+    .empty-state { text-align: center; padding: var(--space-20) var(--space-8); display: none; }
+    .empty-state.visible { display: block; }
+    .empty-icon { font-size: 3rem; margin-bottom: var(--space-4); }
+    .empty-title { font-family: var(--font-display); font-weight: 700; font-size: var(--text-lg); color: var(--color-text); margin-bottom: var(--space-2); }
+    .empty-subtitle { font-size: var(--text-sm); color: var(--color-text-muted); }
+
+    /* Footer */
+    .site-footer { background: var(--color-surface); border-top: 1px solid var(--color-border); padding: var(--space-8) var(--space-6); text-align: center; }
+    .footer-inner { max-width: var(--content-default); margin: 0 auto; }
+    .footer-text { font-size: var(--text-xs); color: var(--color-text-faint); line-height: 1.7; }
+    .footer-text a { color: var(--color-primary); text-decoration: none; }
+    .footer-text a:hover { text-decoration: underline; }
+
+    /* Responsive and SharePoint embed support */
+    @media (max-width: 1024px) {
+      .header-inner,
+      .legend-inner,
+      .controls-inner,
+      .main,
+      .footer-inner { max-width: 100%; }
+      .controls-inner { align-items: stretch; }
+      .filter-group { width: 100%; }
+      .sort-wrap { margin-left: 0; }
+    }
+    @media (max-width: 768px) {
+      .header-inner { flex-wrap: wrap; justify-content: center; text-align: center; }
+      .cards-grid { grid-template-columns: 1fr; gap: var(--space-4); }
+      .hero { padding-inline: var(--space-4); }
+      .hero-content { max-width: 100%; }
+      .hero-kogod-note { display: block; }
+      .hero-stats { gap: var(--space-4); }
+      .hero-stat { min-width: 44%; }
+      .controls-bar,
+      .legend-bar,
+      .main,
+      .site-footer { padding-left: var(--space-4); padding-right: var(--space-4); }
+      .controls-inner { flex-direction: column; align-items: stretch; }
+      .filter-group { overflow-x: visible; flex-wrap: wrap; padding-bottom: var(--space-1); }
+      .filter-label { align-self: center; }
+      .filter-btn { flex: 0 0 auto; }
+      .search-wrap,
+      .sort-wrap,
+      .sort-select { width: 100%; max-width: 100%; }
+      .sort-wrap { justify-content: space-between; }
+      .detail-grid { grid-template-columns: 1fr; }
+      .legend-inner { flex-direction: column; align-items: flex-start; gap: var(--space-2); }
+      .legend-items { gap: var(--space-3); }
+      .tab-buttons { flex-wrap: wrap; overflow-x: visible; }
+      .tab-btn { flex: 1 0 33%; min-width: 112px; }
+    }
+    @media (max-width: 560px) {
+      .header-inner { padding: var(--space-3) var(--space-4); }
+      .kogod-badge { white-space: normal; }
+      .logo-img { width: min(220px, 76vw); }
+      .hero-stat { min-width: 45%; }
+      .salary-header { align-items: flex-start; flex-direction: column; gap: var(--space-1); }
+      .salary-row { grid-template-columns: 82px 1fr 72px; gap: var(--space-2); }
+      .card-header,
+      .card-body,
+      .tab-panels.open { padding-left: var(--space-4); padding-right: var(--space-4); }
+      .card-top { flex-direction: column; }
+      .role-item { align-items: flex-start; }
+      .empty-state { padding: var(--space-12) var(--space-4); }
+    }
+    @media (max-width: 390px) {
+      .hero-stat { min-width: 100%; }
+      .salary-row { grid-template-columns: 1fr; gap: var(--space-1); }
+      .salary-amount { text-align: left; }
+      .tab-btn { min-width: 104px; }
+    }
+
+    
+.strengths-wrap{display:flex;flex-wrap:wrap;gap:var(--space-2);margin-bottom:var(--space-4)}
+.strength-tag{font-size:var(--text-xs);font-weight:600;padding:var(--space-1) var(--space-2);border-radius:var(--radius-full);background:color-mix(in oklch,var(--color-accent) 20%,var(--color-surface));color:var(--color-text);border:1px solid color-mix(in oklch,var(--color-accent) 40%,var(--color-border))}
+.cs-tag-executing{background:var(--color-cs-executing-light);color:var(--color-cs-executing);border:1px solid var(--color-cs-executing-border)}
+.cs-tag-influencing{background:var(--color-cs-influencing-light);color:var(--color-cs-influencing);border:1px solid var(--color-cs-influencing-border)}
+.cs-tag-relationship{background:var(--color-cs-relationship-light);color:var(--color-cs-relationship);border:1px solid var(--color-cs-relationship-border)}
+.cs-tag-strategic{background:var(--color-cs-strategic-light);color:var(--color-cs-strategic);border:1px solid var(--color-cs-strategic-border)}
+.cs-domain-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--space-1);display:block}
+.source-note{font-size:var(--text-xs);color:var(--color-text-muted);line-height:1.55;margin-top:var(--space-3);padding-top:var(--space-3);border-top:1px solid var(--color-divider)}
+@keyframes salaryPulse {
+      0% { background-color: var(--color-accent-highlight); }
+      100% { background-color: transparent; }
+    }
+    .card.sort-highlight { animation: salaryPulse 0.6s ease; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="Kogod School of Business">
+        <img class="logo-img" src="kogod-logo-fullcolor.png" alt="Kogod School of Business" />
+      </a>
+      <span class="kogod-badge">Sustainability Career Explorer</span>
+      <div class="header-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><circle cx="6" cy="6" r="6"/></svg>
+        Use your Passion to Find your Place at Work
+      </div>
+      <h1>The <em>Sustainability</em><br>Career Explorer</h1>
+      <p>Explore sustainability career paths by function, skill, salary context, and AU + Kogod preparation.</p>
+      <div class="hero-kogod-note">
+        Choose 2-3 paths that match your interests, strengths, or experience. Open the tabs to compare skills, courses, and next steps.
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="hero-stat-number">15</div><div class="hero-stat-label">Functions</div></div>
+        <div class="hero-stat"><div class="hero-stat-number">40+</div><div class="hero-stat-label">Job Titles</div></div>
+        <div class="hero-stat"><div class="hero-stat-number">50+</div><div class="hero-stat-label">Pivot-From Backgrounds</div></div>
+        <div class="hero-stat"><div class="hero-stat-number">12</div><div class="hero-stat-label">Kogod Courses Mapped</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEGEND -->
+  <div class="legend-bar">
+    <div class="legend-inner">
+      <span class="legend-title">Each card includes:</span>
+      <div class="legend-items">
+        <div class="legend-item"><div class="legend-dot" style="background: var(--color-primary);"></div> Function overview & pay</div>
+        <div class="legend-item"><div class="legend-dot" style="background: var(--color-kogod);"></div> Kogod Prep (courses, clubs, labs)</div>
+        <div class="legend-item"><div class="legend-dot" style="background: var(--color-pivot);"></div> Industry Pivot Guide (for grad students)</div>
+
+      </div>
+    </div>
+  </div>
+  <!-- CONTROLS -->
+  <div class="controls-bar">
+    <div class="controls-inner">
+      <div class="search-wrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="search" class="search-input" id="searchInput" placeholder="Search pathways, skills, courses&hellip;" aria-label="Search" autocomplete="off" />
+      </div>
+      <div class="filter-group"><span class="filter-label">Filter</span><button class="filter-btn active" data-filter="all">All</button><button class="filter-btn" data-filter="data">Data</button><button class="filter-btn" data-filter="reporting">Reporting</button><button class="filter-btn" data-filter="finance">Finance</button><button class="filter-btn" data-filter="policy">Policy</button><button class="filter-btn" data-filter="comms">Comms</button><button class="filter-btn" data-filter="operations">Operations</button><button class="filter-btn" data-filter="systems">Systems</button><button class="filter-btn" data-filter="energy">Energy</button><button class="filter-btn" data-filter="management">Management</button><button class="filter-btn" data-filter="research">Research</button></div><div class="sort-wrap">
+        <label class="filter-label" for="sortSelect">Sort:</label>
+        <select class="sort-select" id="sortSelect">
+          <option value="default">Default Order</option>
+          <option value="salary-high">Salary: High &rarr; Low</option>
+          <option value="salary-low">Salary: Low &rarr; High</option>
+          <option value="name-az">A &rarr; Z</option>
+          <option value="name-za">Z &rarr; A</option>
+        </select>
+      </div>
+      <span class="results-count" id="resultsCount" aria-live="polite"></span>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main class="main" id="mainContent">
+    <div class="cards-grid" id="cardsGrid">
+
+<article class="card" data-category="data" data-name="Sustainability Analytics &amp; Data" data-salary-mid="100">
+  <div class="card-header">
+    <div class="card-top">
+      <div>
+        <span class="card-category-badge">Data</span>
+      </div>
+    </div>
+    <h2 class="card-title">Sustainability Analytics &amp; Data</h2>
+    <p class="card-subtitle">Turn environmental, operational, and stakeholder data into decisions on climate, ESG, supply chains, and strategy.</p>
+    <p class="best-for"><strong>Best for students who...</strong> like patterns, dashboards, evidence, and turning messy information into clear recommendations.</p>
+  </div>
+  <div class="salary-section">
+    <div class="salary-header">
+      <span class="salary-label">Directional U.S. pay context</span>
+      <span class="salary-total">70K-105K <span>typical range</span></span>
+    </div>
+    <div class="salary-levels">
+      <div class="salary-row"><span class="salary-level-name">Early career</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:38%;background:var(--color-primary);opacity:.8"></div></div><span class="salary-amount">70K-90K</span></div>
+      <div class="salary-row"><span class="salary-level-name">Experienced</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:72%;background:var(--color-primary)"></div></div><span class="salary-amount">100K-145K</span></div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-description">These roles clean, analyze, visualize, and interpret sustainability data for corporate teams, nonprofits, consultancies, and public agencies. Early-career work often includes dashboarding, benchmarking, KPI tracking, materiality support, and translating messy data into actionable insight.</p>
+  </div>
+  <div class="card-footer">
+    <div class="tab-buttons">
+      <button class="tab-btn tab-details" data-tab="details" data-card="sd">Details</button>
+      <button class="tab-btn tab-kogod" data-tab="kogod" data-card="sd"><div class="tab-dot" style="background:var(--color-kogod)"></div>Kogod Prep</button>
+      <button class="tab-btn tab-pivot" data-tab="pivot" data-card="sd"><div class="tab-dot" style="background:var(--color-pivot)"></div>Pivot Guide</button>
+    </div>
+    <div class="tab-panels" id="panels-sd">
+      <div class="tab-panel" id="details-sd">
+                <div class="section-title" style="margin-bottom:var(--space-2)">Core Skills</div>
+        <div class="skills-wrap"><span class='skill-tag'>Excel</span><span class='skill-tag'>SQL</span><span class='skill-tag'>Power BI/Tableau</span><span class='skill-tag'>Data Cleaning</span><span class='skill-tag'>KPI Design</span><span class='skill-tag'>Storytelling with Data</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Career Path</div>
+        <div class="roles-list"><div class="role-item">Data Analyst → Sustainability Analyst → Senior Analyst → Manager, Analytics → Director, Sustainability Insights</div></div>
+        <div class="skills-valued-group">
+<div class="section-title" style="margin-top:var(--space-4)">CliftonStrengths that may help</div>
+<div class="strengths-wrap"><span class="strength-tag cs-tag-strategic">Analytical</span><span class="strength-tag cs-tag-strategic">Input</span><span class="strength-tag cs-tag-strategic">Learner</span><span class="strength-tag cs-tag-executing">Focus</span><span class="strength-tag cs-tag-relationship">Individualization</span></div>
+<div class="skills-valued-label">Technical</div>
+<div class="skills-wrap"><span class="skill-tag">SQL & Python</span><span class="skill-tag">Power BI / Tableau</span><span class="skill-tag">ESG data platforms</span><span class="skill-tag">Data cleaning & QA</span><span class="skill-tag">GIS basics</span></div>
+<div class="skills-valued-label">Professional</div>
+<div class="skills-wrap"><span class="skill-tag">Translating data into recommendations</span><span class="skill-tag">Stakeholder communication</span><span class="skill-tag">Attention to detail</span><span class="skill-tag">Intellectual curiosity</span><span class="skill-tag">Cross-team collaboration</span></div>
+</div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Key Credentials</div>
+        <div class="certs-wrap"><span class='cert-tag'>Bloomberg</span><span class='cert-tag'>ISSP-SA</span><span class='cert-tag'>GIS coursework</span><span class='cert-tag'>Power BI/Tableau portfolio</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Work Context</div>
+        <div class="detail-grid" style="margin-top:var(--space-2)">
+          <div class="detail-item"><div class="detail-item-label">Common Backgrounds</div><div class="detail-item-value">Business, analytics, sustainability, policy, economics</div></div>
+          <div class="detail-item"><div class="detail-item-label">Typical Employers</div><div class="detail-item-value">Corporate ESG teams, consultancies, NGOs, think tanks, federal contractors</div></div>
+          <div class="detail-item"><div class="detail-item-label">Hours / Week</div><div class="detail-item-value">40-55 hrs</div></div>
+          <div class="detail-item"><div class="detail-item-label">Comp Structure</div><div class="detail-item-value">Variable by sector</div></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="kogod-sd">
+        <div class="kogod-panel">
+          <div class="kogod-panel-header"><span class="kogod-panel-title">How to Prepare at AU + Kogod</span></div>
+          <div class="kogod-section"><div class="kogod-section-label">Key Courses</div><div class="kogod-tags"><span class='kogod-tag'>ENVS-654 Geographic Information Systems</span><span class='kogod-tag'>ENVS-696 Environmental Modeling</span><span class='kogod-tag'>ACCT-688 Sustainability Reporting and Analysis</span><span class='kogod-tag'>KSB-612 Strategic Thinking for Decisions</span></div></div>
+          <div class="kogod-section"><div class="kogod-section-label">Experiences, Publishing & Networking</div><div class="kogod-tags"><a class='kogod-tag' href='https://kogod.american.edu/ksr' target='_blank' rel='noopener noreferrer'>Kogod Sustainability Review</a><span class='kogod-tag'>Internships and micro-experiences</span><a class='kogod-tag' href='https://careers.kogod.american.edu/channels/energy-sustainability/' target='_blank' rel='noopener noreferrer'>Energy and Sustainability Industry page</a><a class='kogod-tag' href='https://www.american.edu/centers/' target='_blank' rel='noopener noreferrer'>Relevant AU centers and faculty research</a></div></div>
+          <div class="kogod-tip"><strong>Pro tip:</strong> Build a portfolio with one dashboard, one memo, and one visual story using a real sustainability dataset. Students who can show analysis, not just talk about passion, stand out quickly.</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="pivot-sd">
+        <div class="pivot-panel">
+          <div class="pivot-panel-header"><span class="pivot-panel-title">Pivoting Into Sustainability Analytics &amp; Data</span></div>
+          <div class="pivot-section"><div class="pivot-section-label">Transferable Backgrounds</div><div class="pivot-tags"><span class='pivot-tag'>Business analytics</span><span class='pivot-tag'>Economics</span><span class='pivot-tag'>Research assistant work</span><span class='pivot-tag'>Operations</span><span class='pivot-tag'>Public policy</span></div></div>
+          <div class="pivot-section"><div class="pivot-section-label">Graduate Pivot Roadmap</div><ul class="pivot-steps"><li class='pivot-step'><span class='pivot-step-num'>1</span><span>Build a small portfolio in Excel or Power BI using climate, ESG, or city data.</span></li><li class='pivot-step'><span class='pivot-step-num'>2</span><span>Translate technical outputs into a one-page business recommendation memo.</span></li><li class='pivot-step'><span class='pivot-step-num'>3</span><span>Target analyst roles in DC organizations where policy plus data literacy is valued.</span></li><li class='pivot-step'><span class='pivot-step-num'>4</span><span>Use informational interviews to learn which tools each employer actually uses.</span></li></ul></div>
+          <div class="pivot-tip">This is one of the most accessible entry points for MSSM students because many employers need sustainability data support before they hire highly specialized experts, and it can also be a practical bridge for students who eventually want to compete for consulting or finance-style roles.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+<article class="card" data-category="reporting" data-name="ESG Reporting &amp; Disclosure" data-salary-mid="110">
+  <div class="card-header">
+    <div class="card-top">
+      <div>
+        <span class="card-category-badge">Reporting</span>
+      </div>
+    </div>
+    <h2 class="card-title">ESG Reporting &amp; Disclosure</h2>
+    <p class="card-subtitle">Own sustainability reporting, disclosure frameworks, metrics governance, and stakeholder-facing ESG narratives.</p>
+    <p class="best-for"><strong>Best for students who...</strong> like structure, careful writing, deadlines, and making complex information reliable and usable.</p>
+  </div>
+  <div class="salary-section">
+    <div class="salary-header">
+      <span class="salary-label">Directional U.S. pay context</span>
+      <span class="salary-total">72K-110K <span>typical range</span></span>
+    </div>
+    <div class="salary-levels">
+      <div class="salary-row"><span class="salary-level-name">Early career</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:38%;background:var(--color-primary);opacity:.8"></div></div><span class="salary-amount">72K-92K</span></div>
+      <div class="salary-row"><span class="salary-level-name">Experienced</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:72%;background:var(--color-primary)"></div></div><span class="salary-amount">110K-160K</span></div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-description">These roles coordinate data, narrative, and compliance across teams to produce sustainability reports and disclosures. Students often enter through analyst or specialist roles supporting GRI Standards, IFRS S1/S2 and ISSB-aligned reporting, SASB Standards, CDP/client questionnaires, benchmarking, controls, and stakeholder requests.</p>
+  </div>
+  <div class="card-footer">
+    <div class="tab-buttons">
+      <button class="tab-btn tab-details" data-tab="details" data-card="esg">Details</button>
+      <button class="tab-btn tab-kogod" data-tab="kogod" data-card="esg"><div class="tab-dot" style="background:var(--color-kogod)"></div>Kogod Prep</button>
+      <button class="tab-btn tab-pivot" data-tab="pivot" data-card="esg"><div class="tab-dot" style="background:var(--color-pivot)"></div>Pivot Guide</button>
+    </div>
+    <div class="tab-panels" id="panels-esg">
+      <div class="tab-panel" id="details-esg">
+                <div class="section-title" style="margin-bottom:var(--space-2)">Core Skills</div>
+        <div class="skills-wrap"><span class='skill-tag'>Disclosure Frameworks</span><span class='skill-tag'>Cross-functional Coordination</span><span class='skill-tag'>Materiality</span><span class='skill-tag'>Controls</span><span class='skill-tag'>Technical Writing</span><span class='skill-tag'>Metrics Governance</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Career Path</div>
+        <div class="roles-list"><div class="role-item">ESG Analyst → Reporting Specialist → Senior ESG Analyst → Manager, ESG Reporting → Director, Sustainability Disclosure</div></div>
+        <div class="skills-valued-group">
+<div class="section-title" style="margin-top:var(--space-4)">CliftonStrengths that may help</div>
+<div class="strengths-wrap"><span class="strength-tag cs-tag-executing">Responsibility</span><span class="strength-tag cs-tag-executing">Consistency</span><span class="strength-tag cs-tag-strategic">Analytical</span><span class="strength-tag cs-tag-influencing">Communication</span><span class="strength-tag cs-tag-relationship">Harmony</span></div>
+<div class="skills-valued-label">Technical</div>
+<div class="skills-wrap"><span class="skill-tag">GRI / IFRS S1-S2 / SASB Standards</span><span class="skill-tag">Materiality assessment</span><span class="skill-tag">Metrics governance</span><span class="skill-tag">Data validation</span><span class="skill-tag">Controls design</span></div>
+<div class="skills-valued-label">Professional</div>
+<div class="skills-wrap"><span class="skill-tag">Technical writing</span><span class="skill-tag">Cross-functional coordination</span><span class="skill-tag">Process management</span><span class="skill-tag">Executive communication</span><span class="skill-tag">Deadline discipline</span></div>
+</div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Key Credentials</div>
+        <div class="certs-wrap"><span class='cert-tag'>GRI Certified Sustainability Professional</span><span class='cert-tag'>FSA Credential</span><span class='cert-tag'>CESGA</span><span class='cert-tag'>ISSP-SA</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Work Context</div>
+        <div class="detail-grid" style="margin-top:var(--space-2)">
+          <div class="detail-item"><div class="detail-item-label">Common Backgrounds</div><div class="detail-item-value">Sustainability, accounting, business, policy, communications</div></div>
+          <div class="detail-item"><div class="detail-item-label">Typical Employers</div><div class="detail-item-value">Public companies, advisory firms, nonprofits, ratings/data providers</div></div>
+          <div class="detail-item"><div class="detail-item-label">Hours / Week</div><div class="detail-item-value">45-60 hrs</div></div>
+          <div class="detail-item"><div class="detail-item-label">Comp Structure</div><div class="detail-item-value">Moderate in corporate roles</div></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="kogod-esg">
+        <div class="kogod-panel">
+          <div class="kogod-panel-header"><span class="kogod-panel-title">How to Prepare at AU + Kogod</span></div>
+          <div class="kogod-section"><div class="kogod-section-label">Key Courses</div><div class="kogod-tags"><span class='kogod-tag'>ACCT-688 Sustainability Reporting and Analysis</span><span class='kogod-tag'>FIN-685 Advanced Sustainable Finance</span><span class='kogod-tag'>KSB-612 Strategic Thinking for Decisions</span><span class='kogod-tag'>MGMT-626 Management Consulting Practices and Methodologies</span></div></div>
+          <div class="kogod-section"><div class="kogod-section-label">Experiences, Publishing & Networking</div><div class="kogod-tags"><a class='kogod-tag' href='https://kogod.american.edu/ksr' target='_blank' rel='noopener noreferrer'>Kogod Sustainability Review</a><span class='kogod-tag'>Network and build relationships</span><a class='kogod-tag' href='https://careers.kogod.american.edu/channels/cliftonstrengths/' target='_blank' rel='noopener noreferrer'>CliftonStrengths career exploration</a><a class='kogod-tag' href='https://www.american.edu/centers/' target='_blank' rel='noopener noreferrer'>Cross-school faculty and center network</a></div></div>
+          <div class="kogod-tip"><strong>Pro tip:</strong> Students who can explain the difference between a metric, a target, and a disclosure expectation are immediately more credible in ESG reporting interviews.</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="pivot-esg">
+        <div class="pivot-panel">
+          <div class="pivot-panel-header"><span class="pivot-panel-title">Pivoting Into ESG Reporting &amp; Disclosure</span></div>
+          <div class="pivot-section"><div class="pivot-section-label">Transferable Backgrounds</div><div class="pivot-tags"><span class='pivot-tag'>Accounting</span><span class='pivot-tag'>Audit</span><span class='pivot-tag'>Investor relations</span><span class='pivot-tag'>Communications</span><span class='pivot-tag'>Compliance</span></div></div>
+          <div class="pivot-section"><div class="pivot-section-label">Graduate Pivot Roadmap</div><ul class="pivot-steps"><li class='pivot-step'><span class='pivot-step-num'>1</span><span>Learn the major reporting frameworks and how companies structure annual sustainability reports.</span></li><li class='pivot-step'><span class='pivot-step-num'>2</span><span>Practice converting technical ESG data into concise executive-ready language.</span></li><li class='pivot-step'><span class='pivot-step-num'>3</span><span>Use Kogod Sustainability Review or class work to publish or present on disclosure trends.</span></li><li class='pivot-step'><span class='pivot-step-num'>4</span><span>Target analyst roles at firms with growing reporting obligations rather than fully mature teams.</span></li></ul></div>
+          <div class="pivot-tip">This pathway is ideal for students who like structure, writing, and cross-functional project work more than pure technical modeling.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+<article class="card" data-category="finance" data-name="Sustainable Finance &amp; ESG Investing" data-salary-mid="120">
+  <div class="card-header">
+    <div class="card-top">
+      <div>
+        <span class="card-category-badge">Finance</span>
+      </div>
+    </div>
+    <h2 class="card-title">Sustainable Finance &amp; ESG Investing</h2>
+    <p class="card-subtitle">Bring sustainability considerations into capital allocation, investment research, stewardship, and risk analysis.</p>
+    <p class="best-for"><strong>Best for students who...</strong> enjoy markets, research, numbers, and connecting sustainability issues to business value and risk.</p>
+  </div>
+  <div class="salary-section">
+    <div class="salary-header">
+      <span class="salary-label">Directional U.S. pay context</span>
+      <span class="salary-total">80K-120K <span>typical range</span></span>
+    </div>
+    <div class="salary-levels">
+      <div class="salary-row"><span class="salary-level-name">Early career</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:38%;background:var(--color-primary);opacity:.8"></div></div><span class="salary-amount">80K-100K</span></div>
+      <div class="salary-row"><span class="salary-level-name">Experienced</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:72%;background:var(--color-primary)"></div></div><span class="salary-amount">120K-200K+</span></div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-description">These roles sit across asset management, banking, advisory, corporate finance, and impact-focused investing. Early-career work may include ESG research, stewardship support, portfolio analysis, climate-risk memos, market mapping, and sustainable finance product support.</p>
+  </div>
+  <div class="card-footer">
+    <div class="tab-buttons">
+      <button class="tab-btn tab-details" data-tab="details" data-card="sf">Details</button>
+      <button class="tab-btn tab-kogod" data-tab="kogod" data-card="sf"><div class="tab-dot" style="background:var(--color-kogod)"></div>Kogod Prep</button>
+      <button class="tab-btn tab-pivot" data-tab="pivot" data-card="sf"><div class="tab-dot" style="background:var(--color-pivot)"></div>Pivot Guide</button>
+    </div>
+    <div class="tab-panels" id="panels-sf">
+      <div class="tab-panel" id="details-sf">
+                <div class="section-title" style="margin-bottom:var(--space-2)">Core Skills</div>
+        <div class="skills-wrap"><span class='skill-tag'>Financial Analysis</span><span class='skill-tag'>ESG Integration</span><span class='skill-tag'>Research</span><span class='skill-tag'>Valuation Basics</span><span class='skill-tag'>Climate Risk</span><span class='skill-tag'>Client Communication</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Career Path</div>
+        <div class="roles-list"><div class="role-item">ESG Research Analyst → Sustainable Finance Analyst → Associate → Vice President / Portfolio Specialist → Director or PM Track</div></div>
+        <div class="skills-valued-group">
+<div class="section-title" style="margin-top:var(--space-4)">CliftonStrengths that may help</div>
+<div class="strengths-wrap"><span class="strength-tag cs-tag-strategic">Strategic</span><span class="strength-tag cs-tag-strategic">Analytical</span><span class="strength-tag cs-tag-influencing">Competition</span><span class="strength-tag cs-tag-executing">Focus</span><span class="strength-tag cs-tag-strategic">Futuristic</span></div>
+<div class="skills-valued-label">Technical</div>
+<div class="skills-wrap"><span class="skill-tag">Financial modeling</span><span class="skill-tag">ESG integration frameworks</span><span class="skill-tag">Bloomberg Terminal</span><span class="skill-tag">Climate risk analysis</span><span class="skill-tag">Valuation methods</span></div>
+<div class="skills-valued-label">Professional</div>
+<div class="skills-wrap"><span class="skill-tag">Investment memo writing</span><span class="skill-tag">Client-ready communication</span><span class="skill-tag">Sector research depth</span><span class="skill-tag">Competitive drive</span><span class="skill-tag">Comfort with ambiguity</span></div>
+</div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Key Credentials</div>
+        <div class="certs-wrap"><span class='cert-tag'>CFA Sustainable Investing Certificate</span><span class='cert-tag'>CESGA</span><span class='cert-tag'>Bloomberg</span><span class='cert-tag'>GARP SCR</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Work Context</div>
+        <div class="detail-grid" style="margin-top:var(--space-2)">
+          <div class="detail-item"><div class="detail-item-label">Common Backgrounds</div><div class="detail-item-value">Finance, sustainability, economics, accounting</div></div>
+          <div class="detail-item"><div class="detail-item-label">Typical Employers</div><div class="detail-item-value">Asset managers, banks, DFIs, family offices, ESG data firms, advisory groups</div></div>
+          <div class="detail-item"><div class="detail-item-label">Hours / Week</div><div class="detail-item-value">45-70 hrs</div></div>
+          <div class="detail-item"><div class="detail-item-label">Comp Structure</div><div class="detail-item-value">Higher in investment roles</div></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="kogod-sf">
+        <div class="kogod-panel">
+          <div class="kogod-panel-header"><span class="kogod-panel-title">How to Prepare at AU + Kogod</span></div>
+          <div class="kogod-section"><div class="kogod-section-label">Key Courses</div><div class="kogod-tags"><span class='kogod-tag'>FIN-685 Advanced Sustainable Finance</span><span class='kogod-tag'>ACCT-688 Sustainability Reporting and Analysis</span><span class='kogod-tag'>KSB-612 Strategic Thinking for Decisions</span><span class='kogod-tag'>MGMT-685 Business of Energy</span></div></div>
+          <div class="kogod-section"><div class="kogod-section-label">Experiences, Publishing & Networking</div><div class="kogod-tags"><a class='kogod-tag' href='https://careers.kogod.american.edu/channels/energy-sustainability/' target='_blank' rel='noopener noreferrer'>Energy and Sustainability Industry page</a><span class='kogod-tag'>Kogod outcomes resources</span><span class='kogod-tag'>Network and build relationships</span><span class='kogod-tag'>Cross-school policy and climate programming</span></div></div>
+          <div class="kogod-tip"><strong>Pro tip:</strong> Use investment memos, market maps, and sector theses as work samples. Sustainable finance hiring often rewards students who can connect environmental themes to business and risk outcomes.</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="pivot-sf">
+        <div class="pivot-panel">
+          <div class="pivot-panel-header"><span class="pivot-panel-title">Pivoting Into Sustainable Finance &amp; ESG Investing</span></div>
+          <div class="pivot-section"><div class="pivot-section-label">Transferable Backgrounds</div><div class="pivot-tags"><span class='pivot-tag'>Traditional finance</span><span class='pivot-tag'>Accounting</span><span class='pivot-tag'>Economics</span><span class='pivot-tag'>Consulting</span><span class='pivot-tag'>Policy research</span></div></div>
+          <div class="pivot-section"><div class="pivot-section-label">Graduate Pivot Roadmap</div><ul class="pivot-steps"><li class='pivot-step'><span class='pivot-step-num'>1</span><span>Build fluency in both sustainability concepts and standard finance language.</span></li><li class='pivot-step'><span class='pivot-step-num'>2</span><span>Follow a few sectors deeply, such as utilities, climate tech, or industrial decarbonization.</span></li><li class='pivot-step'><span class='pivot-step-num'>3</span><span>Create one sample investment or credit memo with sustainability factors included.</span></li><li class='pivot-step'><span class='pivot-step-num'>4</span><span>Use DC proximity to target development finance, public finance, and mission-driven capital roles.</span></li></ul></div>
+          <div class="pivot-tip">Students do best here when they can bridge financial reasoning with environmental and social context rather than treating ESG as a separate side topic. Most candidates will need targeted internships, micro-experiences, strong technical samples, and a disciplined networking strategy to be competitive for ESG investing, sustainable finance, and consulting-style strategy roles.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+<article class="card" data-category="reporting" data-name="Carbon Accounting &amp; Climate Measurement" data-salary-mid="115">
+  <div class="card-header">
+    <div class="card-top">
+      <div>
+        <span class="card-category-badge">Reporting</span>
+      </div>
+    </div>
+    <h2 class="card-title">Carbon Accounting &amp; Climate Measurement</h2>
+    <p class="card-subtitle">Measure emissions, build inventories, support target setting, and translate carbon data into operational action.</p>
+    <p class="best-for"><strong>Best for students who...</strong> like precise analysis, spreadsheets, assumptions, and helping organizations understand their climate footprint.</p>
+  </div>
+  <div class="salary-section">
+    <div class="salary-header">
+      <span class="salary-label">Directional U.S. pay context</span>
+      <span class="salary-total">75K-115K <span>typical range</span></span>
+    </div>
+    <div class="salary-levels">
+      <div class="salary-row"><span class="salary-level-name">Early career</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:38%;background:var(--color-primary);opacity:.8"></div></div><span class="salary-amount">75K-95K</span></div>
+      <div class="salary-row"><span class="salary-level-name">Experienced</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:72%;background:var(--color-primary)"></div></div><span class="salary-amount">115K-170K</span></div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-description">These roles focus on greenhouse gas inventories, Scope 1-3 estimation, emissions factors, decarbonization planning, and climate target support. Entry roles often combine spreadsheet-heavy analysis with cross-functional work on procurement, facilities, travel, logistics, and vendor data.</p>
+  </div>
+  <div class="card-footer">
+    <div class="tab-buttons">
+      <button class="tab-btn tab-details" data-tab="details" data-card="ca">Details</button>
+      <button class="tab-btn tab-kogod" data-tab="kogod" data-card="ca"><div class="tab-dot" style="background:var(--color-kogod)"></div>Kogod Prep</button>
+      <button class="tab-btn tab-pivot" data-tab="pivot" data-card="ca"><div class="tab-dot" style="background:var(--color-pivot)"></div>Pivot Guide</button>
+    </div>
+    <div class="tab-panels" id="panels-ca">
+      <div class="tab-panel" id="details-ca">
+                <div class="section-title" style="margin-bottom:var(--space-2)">Core Skills</div>
+        <div class="skills-wrap"><span class='skill-tag'>GHG Accounting</span><span class='skill-tag'>Scope 1-3</span><span class='skill-tag'>Data QA/QC</span><span class='skill-tag'>Emission Factors</span><span class='skill-tag'>Scenario Analysis</span><span class='skill-tag'>Stakeholder Coordination</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Career Path</div>
+        <div class="roles-list"><div class="role-item">Carbon Analyst → Climate Analyst → Senior Associate → Decarbonization Manager → Director, Climate Strategy</div></div>
+        <div class="skills-valued-group">
+<div class="section-title" style="margin-top:var(--space-4)">CliftonStrengths that may help</div>
+<div class="strengths-wrap"><span class="strength-tag cs-tag-strategic">Analytical</span><span class="strength-tag cs-tag-executing">Deliberative</span><span class="strength-tag cs-tag-executing">Discipline</span><span class="strength-tag cs-tag-strategic">Learner</span><span class="strength-tag cs-tag-executing">Restorative</span></div>
+<div class="skills-valued-label">Technical</div>
+<div class="skills-wrap"><span class="skill-tag">GHG Protocol (Scope 1-3)</span><span class="skill-tag">Emission factor databases</span><span class="skill-tag">Scenario modeling</span><span class="skill-tag">CDP / SBTi methodology</span><span class="skill-tag">Spreadsheet-heavy analysis</span></div>
+<div class="skills-valued-label">Professional</div>
+<div class="skills-wrap"><span class="skill-tag">Explaining assumptions clearly</span><span class="skill-tag">Data QA/QC rigor</span><span class="skill-tag">Cross-functional data gathering</span><span class="skill-tag">Patience with messy data</span><span class="skill-tag">Precision under complexity</span></div>
+</div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Key Credentials</div>
+        <div class="certs-wrap"><span class='cert-tag'>GARP SCR</span><span class='cert-tag'>ISSP-SEA</span><span class='cert-tag'>GRI/FSA familiarity</span><span class='cert-tag'>Carbon accounting training</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Work Context</div>
+        <div class="detail-grid" style="margin-top:var(--space-2)">
+          <div class="detail-item"><div class="detail-item-label">Common Backgrounds</div><div class="detail-item-value">Sustainability, engineering-adjacent fields, business, policy, environmental science</div></div>
+          <div class="detail-item"><div class="detail-item-label">Typical Employers</div><div class="detail-item-value">Consultancies, corporations, software firms, nonprofits, utilities</div></div>
+          <div class="detail-item"><div class="detail-item-label">Hours / Week</div><div class="detail-item-value">45-60 hrs</div></div>
+          <div class="detail-item"><div class="detail-item-label">Comp Structure</div><div class="detail-item-value">Varies by consulting vs in-house</div></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="kogod-ca">
+        <div class="kogod-panel">
+          <div class="kogod-panel-header"><span class="kogod-panel-title">How to Prepare at AU + Kogod</span></div>
+          <div class="kogod-section"><div class="kogod-section-label">Key Courses</div><div class="kogod-tags"><span class='kogod-tag'>ACCT-688 Sustainability Reporting and Analysis</span><span class='kogod-tag'>ENVS-696 Environmental Modeling</span><span class='kogod-tag'>ENVS-505 Energy</span><span class='kogod-tag'>IBUS-745 Global Supply Chain Management</span></div></div>
+          <div class="kogod-section"><div class="kogod-section-label">Experiences, Publishing & Networking</div><div class="kogod-tags"><a class='kogod-tag' href='https://careers.kogod.american.edu/channels/energy-sustainability/' target='_blank' rel='noopener noreferrer'>Energy and Sustainability Industry page</a><span class='kogod-tag'>Cross-school environmental faculty</span><span class='kogod-tag'>Network and build relationships</span><a class='kogod-tag' href='https://www.american.edu/centers/' target='_blank' rel='noopener noreferrer'>Center-based climate and environment events</a></div></div>
+          <div class="kogod-tip"><strong>Pro tip:</strong> Students who understand data limitations and can explain assumptions clearly are often more valuable than those who only memorize carbon jargon.</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="pivot-ca">
+        <div class="pivot-panel">
+          <div class="pivot-panel-header"><span class="pivot-panel-title">Pivoting Into Carbon Accounting &amp; Climate Measurement</span></div>
+          <div class="pivot-section"><div class="pivot-section-label">Transferable Backgrounds</div><div class="pivot-tags"><span class='pivot-tag'>Data analytics</span><span class='pivot-tag'>Operations</span><span class='pivot-tag'>Facilities</span><span class='pivot-tag'>Supply chain</span><span class='pivot-tag'>Environmental science</span></div></div>
+          <div class="pivot-section"><div class="pivot-section-label">Graduate Pivot Roadmap</div><ul class="pivot-steps"><li class='pivot-step'><span class='pivot-step-num'>1</span><span>Learn the logic of emissions boundaries and categories before obsessing over tools.</span></li><li class='pivot-step'><span class='pivot-step-num'>2</span><span>Practice building a simple emissions inventory from publicly available data.</span></li><li class='pivot-step'><span class='pivot-step-num'>3</span><span>Use case competitions or class projects to propose decarbonization actions from your findings.</span></li><li class='pivot-step'><span class='pivot-step-num'>4</span><span>Target employers that are still building their climate measurement processes.</span></li></ul></div>
+          <div class="pivot-tip">Carbon accounting is increasingly a gateway into broader climate strategy roles because measurement work creates visibility into how organizations actually operate.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+<article class="card" data-category="policy" data-name="Policy, Advocacy &amp; Government Affairs" data-salary-mid="95">
+  <div class="card-header">
+    <div class="card-top">
+      <div>
+        <span class="card-category-badge">Policy</span>
+      </div>
+    </div>
+    <h2 class="card-title">Policy, Advocacy &amp; Government Affairs</h2>
+    <p class="card-subtitle">Shape legislation, regulation, public affairs strategy, stakeholder coalitions, and institutional sustainability agendas.</p>
+    <p class="best-for"><strong>Best for students who...</strong> care about public issues, writing, coalition-building, and how decisions move through institutions.</p>
+  </div>
+  <div class="salary-section">
+    <div class="salary-header">
+      <span class="salary-label">Directional U.S. pay context</span>
+      <span class="salary-total">65K-95K <span>typical range</span></span>
+    </div>
+    <div class="salary-levels">
+      <div class="salary-row"><span class="salary-level-name">Early career</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:38%;background:var(--color-primary);opacity:.8"></div></div><span class="salary-amount">65K-85K</span></div>
+      <div class="salary-row"><span class="salary-level-name">Experienced</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:72%;background:var(--color-primary)"></div></div><span class="salary-amount">95K-150K+</span></div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-description">These roles sit in government, associations, nonprofits, think tanks, and corporate public affairs teams. Students in DC can especially leverage policy writing, stakeholder engagement, issue tracking, and legislative analysis to enter climate, energy, food, and urban policy work.</p>
+  </div>
+  <div class="card-footer">
+    <div class="tab-buttons">
+      <button class="tab-btn tab-details" data-tab="details" data-card="pg">Details</button>
+      <button class="tab-btn tab-kogod" data-tab="kogod" data-card="pg"><div class="tab-dot" style="background:var(--color-kogod)"></div>Kogod Prep</button>
+      <button class="tab-btn tab-pivot" data-tab="pivot" data-card="pg"><div class="tab-dot" style="background:var(--color-pivot)"></div>Pivot Guide</button>
+    </div>
+    <div class="tab-panels" id="panels-pg">
+      <div class="tab-panel" id="details-pg">
+                <div class="section-title" style="margin-bottom:var(--space-2)">Core Skills</div>
+        <div class="skills-wrap"><span class='skill-tag'>Policy Analysis</span><span class='skill-tag'>Writing</span><span class='skill-tag'>Stakeholder Mapping</span><span class='skill-tag'>Legislative Research</span><span class='skill-tag'>Briefing Memos</span><span class='skill-tag'>Coalition Building</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Career Path</div>
+        <div class="roles-list"><div class="role-item">Policy Assistant → Policy Analyst → Senior Analyst / Associate → Manager, Government Affairs → Director, Policy</div></div>
+        <div class="skills-valued-group">
+<div class="section-title" style="margin-top:var(--space-4)">CliftonStrengths that may help</div>
+<div class="strengths-wrap"><span class="strength-tag cs-tag-influencing">Communication</span><span class="strength-tag cs-tag-strategic">Context</span><span class="strength-tag cs-tag-strategic">Strategic</span><span class="strength-tag cs-tag-relationship">Connectedness</span><span class="strength-tag cs-tag-influencing">Woo</span></div>
+<div class="skills-valued-label">Technical</div>
+<div class="skills-wrap"><span class="skill-tag">Legislative analysis</span><span class="skill-tag">Regulatory tracking</span><span class="skill-tag">Policy brief writing</span><span class="skill-tag">Stakeholder mapping</span><span class="skill-tag">Coalition strategy</span></div>
+<div class="skills-valued-label">Professional</div>
+<div class="skills-wrap"><span class="skill-tag">Persuasive writing</span><span class="skill-tag">Relationship building</span><span class="skill-tag">Issue fluency</span><span class="skill-tag">Networking with intentionality</span><span class="skill-tag">Adaptive communication style</span></div>
+</div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Key Credentials</div>
+        <div class="certs-wrap"><span class='cert-tag'>Published policy writing</span><span class='cert-tag'>CliftonStrengths articulation</span><span class='cert-tag'>LEED or ESG credential depending on issue area</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Work Context</div>
+        <div class="detail-grid" style="margin-top:var(--space-2)">
+          <div class="detail-item"><div class="detail-item-label">Common Backgrounds</div><div class="detail-item-value">Policy, sustainability, international affairs, economics, communications</div></div>
+          <div class="detail-item"><div class="detail-item-label">Typical Employers</div><div class="detail-item-value">Federal agencies, NGOs, trade groups, think tanks, mission-driven companies</div></div>
+          <div class="detail-item"><div class="detail-item-label">Hours / Week</div><div class="detail-item-value">40-60 hrs</div></div>
+          <div class="detail-item"><div class="detail-item-label">Comp Structure</div><div class="detail-item-value">Lower in nonprofit/public sector; higher in corporate affairs</div></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="kogod-pg">
+        <div class="kogod-panel">
+          <div class="kogod-panel-header"><span class="kogod-panel-title">How to Prepare at AU + Kogod</span></div>
+          <div class="kogod-section"><div class="kogod-section-label">Key Courses</div><div class="kogod-tags"><span class='kogod-tag'>KSB-612 Strategic Thinking for Decisions</span><span class='kogod-tag'>MGMT-626 Management Consulting Practices and Methodologies</span><span class='kogod-tag'>SIS-620 Sustainable Design and LEED</span><span class='kogod-tag'>MGMT-685 Business of Energy</span></div></div>
+          <div class="kogod-section"><div class="kogod-section-label">Experiences, Publishing & Networking</div><div class="kogod-tags"><a class='kogod-tag' href='https://www.american.edu/centers/' target='_blank' rel='noopener noreferrer'>AU centers network</a><span class='kogod-tag'>SIS and CAS faculty ecosystem</span><span class='kogod-tag'>Network and build relationships</span><a class='kogod-tag' href='https://careers.kogod.american.edu/resources/conferences/' target='_blank' rel='noopener noreferrer'>Conferences and competitions</a></div></div>
+          <div class="kogod-tip"><strong>Pro tip:</strong> For DC hiring, a short writing sample and a clear issue focus often matter more than a generic statement that you are interested in sustainability.</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="pivot-pg">
+        <div class="pivot-panel">
+          <div class="pivot-panel-header"><span class="pivot-panel-title">Pivoting Into Policy, Advocacy &amp; Government Affairs</span></div>
+          <div class="pivot-section"><div class="pivot-section-label">Transferable Backgrounds</div><div class="pivot-tags"><span class='pivot-tag'>Government</span><span class='pivot-tag'>International affairs</span><span class='pivot-tag'>Communications</span><span class='pivot-tag'>Nonprofit work</span><span class='pivot-tag'>Research</span></div></div>
+          <div class="pivot-section"><div class="pivot-section-label">Graduate Pivot Roadmap</div><ul class="pivot-steps"><li class='pivot-step'><span class='pivot-step-num'>1</span><span>Pick one issue lane such as clean energy, food systems, circularity, or urban resilience.</span></li><li class='pivot-step'><span class='pivot-step-num'>2</span><span>Produce a publishable memo or short article through class, KSR, or an outside venue.</span></li><li class='pivot-step'><span class='pivot-step-num'>3</span><span>Attend DC events and track organizations by issue, not just by brand name.</span></li><li class='pivot-step'><span class='pivot-step-num'>4</span><span>Target internships and fellowships that convert to staff roles.</span></li></ul></div>
+          <div class="pivot-tip">DC is a genuine advantage here because proximity, issue fluency, and relationship building matter as much as formal technical training.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+<article class="card" data-category="comms" data-name="Sustainability Communications &amp; Marketing" data-salary-mid="90">
+  <div class="card-header">
+    <div class="card-top">
+      <div>
+        <span class="card-category-badge">Comms</span>
+      </div>
+    </div>
+    <h2 class="card-title">Sustainability Communications &amp; Marketing</h2>
+    <p class="card-subtitle">Translate sustainability strategy into compelling narratives for customers, employees, investors, communities, and partners.</p>
+    <p class="best-for"><strong>Best for students who...</strong> like storytelling, audience awareness, writing, presentations, and making sustainability understandable.</p>
+  </div>
+  <div class="salary-section">
+    <div class="salary-header">
+      <span class="salary-label">Directional U.S. pay context</span>
+      <span class="salary-total">60K-88K <span>typical range</span></span>
+    </div>
+    <div class="salary-levels">
+      <div class="salary-row"><span class="salary-level-name">Early career</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:38%;background:var(--color-primary);opacity:.8"></div></div><span class="salary-amount">60K-80K</span></div>
+      <div class="salary-row"><span class="salary-level-name">Experienced</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:72%;background:var(--color-primary)"></div></div><span class="salary-amount">90K-145K</span></div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-description">These roles focus on messaging, campaigns, stakeholder education, thought leadership, employer brand, internal communication, and reputation. Strong entry candidates can write clearly, synthesize complex information, and tailor a message for different audiences without oversimplifying the substance.</p>
+  </div>
+  <div class="card-footer">
+    <div class="tab-buttons">
+      <button class="tab-btn tab-details" data-tab="details" data-card="cm">Details</button>
+      <button class="tab-btn tab-kogod" data-tab="kogod" data-card="cm"><div class="tab-dot" style="background:var(--color-kogod)"></div>Kogod Prep</button>
+      <button class="tab-btn tab-pivot" data-tab="pivot" data-card="cm"><div class="tab-dot" style="background:var(--color-pivot)"></div>Pivot Guide</button>
+    </div>
+    <div class="tab-panels" id="panels-cm">
+      <div class="tab-panel" id="details-cm">
+                <div class="section-title" style="margin-bottom:var(--space-2)">Core Skills</div>
+        <div class="skills-wrap"><span class='skill-tag'>Messaging</span><span class='skill-tag'>Content Strategy</span><span class='skill-tag'>Presentation Design</span><span class='skill-tag'>Stakeholder Communication</span><span class='skill-tag'>Brand Storytelling</span><span class='skill-tag'>Campaign Planning</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Career Path</div>
+        <div class="roles-list"><div class="role-item">Communications Coordinator → Sustainability Communications Specialist → Manager → Senior Manager / Director, Communications</div></div>
+        <div class="skills-valued-group">
+<div class="section-title" style="margin-top:var(--space-4)">CliftonStrengths that may help</div>
+<div class="strengths-wrap"><span class="strength-tag cs-tag-influencing">Communication</span><span class="strength-tag cs-tag-strategic">Ideation</span><span class="strength-tag cs-tag-influencing">Woo</span><span class="strength-tag cs-tag-relationship">Empathy</span><span class="strength-tag cs-tag-influencing">Activator</span></div>
+<div class="skills-valued-label">Technical</div>
+<div class="skills-wrap"><span class="skill-tag">Content strategy</span><span class="skill-tag">Sustainability report writing</span><span class="skill-tag">Social media management</span><span class="skill-tag">Presentation design</span><span class="skill-tag">Anti-greenwashing compliance</span></div>
+<div class="skills-valued-label">Professional</div>
+<div class="skills-wrap"><span class="skill-tag">Audience adaptation</span><span class="skill-tag">Storytelling with substance</span><span class="skill-tag">Creative problem solving</span><span class="skill-tag">Brand sensitivity</span><span class="skill-tag">Energizing others</span></div>
+</div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Key Credentials</div>
+        <div class="certs-wrap"><span class='cert-tag'>Published writing portfolio</span><span class='cert-tag'>GRI familiarity</span><span class='cert-tag'>Kogod Sustainability Review articles</span><span class='cert-tag'>Public speaking experience</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Work Context</div>
+        <div class="detail-grid" style="margin-top:var(--space-2)">
+          <div class="detail-item"><div class="detail-item-label">Common Backgrounds</div><div class="detail-item-value">Communications, business, sustainability, journalism, policy</div></div>
+          <div class="detail-item"><div class="detail-item-label">Typical Employers</div><div class="detail-item-value">Corporations, nonprofits, agencies, startups, universities, trade associations</div></div>
+          <div class="detail-item"><div class="detail-item-label">Hours / Week</div><div class="detail-item-value">40-55 hrs</div></div>
+          <div class="detail-item"><div class="detail-item-label">Comp Structure</div><div class="detail-item-value">Moderate in corporate roles</div></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="kogod-cm">
+        <div class="kogod-panel">
+          <div class="kogod-panel-header"><span class="kogod-panel-title">How to Prepare at AU + Kogod</span></div>
+          <div class="kogod-section"><div class="kogod-section-label">Key Courses</div><div class="kogod-tags"><span class='kogod-tag'>ACCT-688 Sustainability Reporting and Analysis</span><span class='kogod-tag'>KSB-612 Strategic Thinking for Decisions</span><span class='kogod-tag'>MGMT-626 Management Consulting Practices and Methodologies</span><span class='kogod-tag'>MGMT-685 Sustainability and Technology</span></div></div>
+          <div class="kogod-section"><div class="kogod-section-label">Experiences, Publishing & Networking</div><div class="kogod-tags"><a class='kogod-tag' href='https://kogod.american.edu/ksr' target='_blank' rel='noopener noreferrer'>Kogod Sustainability Review</a><span class='kogod-tag'>Network and build relationships</span><a class='kogod-tag' href='https://careers.kogod.american.edu/resources/conferences/' target='_blank' rel='noopener noreferrer'>Conferences and competitions</a><a class='kogod-tag' href='https://www.american.edu/centers/' target='_blank' rel='noopener noreferrer'>Cross-school centers and faculty events</a></div></div>
+          <div class="kogod-tip"><strong>Pro tip:</strong> KSR is especially powerful here because it lets students demonstrate that they can turn sustainability ideas into polished public-facing communication.</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="pivot-cm">
+        <div class="pivot-panel">
+          <div class="pivot-panel-header"><span class="pivot-panel-title">Pivoting Into Sustainability Communications &amp; Marketing</span></div>
+          <div class="pivot-section"><div class="pivot-section-label">Transferable Backgrounds</div><div class="pivot-tags"><span class='pivot-tag'>Marketing</span><span class='pivot-tag'>Journalism</span><span class='pivot-tag'>PR</span><span class='pivot-tag'>Advocacy</span><span class='pivot-tag'>Student leadership</span></div></div>
+          <div class="pivot-section"><div class="pivot-section-label">Graduate Pivot Roadmap</div><ul class="pivot-steps"><li class='pivot-step'><span class='pivot-step-num'>1</span><span>Build a writing portfolio with short explainers, event recaps, and issue analyses.</span></li><li class='pivot-step'><span class='pivot-step-num'>2</span><span>Practice translating technical sustainability content for non-expert audiences.</span></li><li class='pivot-step'><span class='pivot-step-num'>3</span><span>Use Kogod Sustainability Review, LinkedIn, or presentations to show a visible record of communication work.</span></li><li class='pivot-step'><span class='pivot-step-num'>4</span><span>Target communications roles inside mission-driven organizations or ESG teams.</span></li></ul></div>
+          <div class="pivot-tip">Students who can combine substance and clarity are rare. Many candidates can market, but fewer can communicate sustainability credibly.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+<article class="card" data-category="operations" data-name="Sustainable Supply Chain &amp; Logistics" data-salary-mid="105">
+  <div class="card-header">
+    <div class="card-top">
+      <div>
+        <span class="card-category-badge">Operations</span>
+      </div>
+    </div>
+    <h2 class="card-title">Sustainable Supply Chain &amp; Logistics</h2>
+    <p class="card-subtitle">Improve procurement, transportation, sourcing, traceability, resilience, and supplier sustainability performance.</p>
+    <p class="best-for"><strong>Best for students who...</strong> think in systems, tradeoffs, suppliers, operations, and practical improvements across a value chain.</p>
+  </div>
+  <div class="salary-section">
+    <div class="salary-header">
+      <span class="salary-label">Directional U.S. pay context</span>
+      <span class="salary-total">72K-105K <span>typical range</span></span>
+    </div>
+    <div class="salary-levels">
+      <div class="salary-row"><span class="salary-level-name">Early career</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:38%;background:var(--color-primary);opacity:.8"></div></div><span class="salary-amount">72K-92K</span></div>
+      <div class="salary-row"><span class="salary-level-name">Experienced</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:72%;background:var(--color-primary)"></div></div><span class="salary-amount">105K-150K</span></div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-description">These roles sit at the intersection of operations, procurement, supplier engagement, risk, and sustainability goals. Entry roles often support supplier assessments, logistics analytics, responsible sourcing projects, traceability initiatives, and cross-functional improvement work.</p>
+  </div>
+  <div class="card-footer">
+    <div class="tab-buttons">
+      <button class="tab-btn tab-details" data-tab="details" data-card="sl">Details</button>
+      <button class="tab-btn tab-kogod" data-tab="kogod" data-card="sl"><div class="tab-dot" style="background:var(--color-kogod)"></div>Kogod Prep</button>
+      <button class="tab-btn tab-pivot" data-tab="pivot" data-card="sl"><div class="tab-dot" style="background:var(--color-pivot)"></div>Pivot Guide</button>
+    </div>
+    <div class="tab-panels" id="panels-sl">
+      <div class="tab-panel" id="details-sl">
+                <div class="section-title" style="margin-bottom:var(--space-2)">Core Skills</div>
+        <div class="skills-wrap"><span class='skill-tag'>Supply Chain Mapping</span><span class='skill-tag'>Procurement</span><span class='skill-tag'>Risk Assessment</span><span class='skill-tag'>Supplier Engagement</span><span class='skill-tag'>Traceability</span><span class='skill-tag'>Process Improvement</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Career Path</div>
+        <div class="roles-list"><div class="role-item">Supply Chain Analyst → Sustainability / Procurement Analyst → Manager → Senior Manager, Responsible Sourcing → Director, Sustainable Supply Chain</div></div>
+        <div class="skills-valued-group">
+<div class="section-title" style="margin-top:var(--space-4)">CliftonStrengths that may help</div>
+<div class="strengths-wrap"><span class="strength-tag cs-tag-executing">Arranger</span><span class="strength-tag cs-tag-strategic">Analytical</span><span class="strength-tag cs-tag-executing">Consistency</span><span class="strength-tag cs-tag-executing">Deliberative</span><span class="strength-tag cs-tag-relationship">Relator</span></div>
+<div class="skills-valued-label">Technical</div>
+<div class="skills-wrap"><span class="skill-tag">Supply chain mapping</span><span class="skill-tag">Supplier questionnaires</span><span class="skill-tag">Traceability systems</span><span class="skill-tag">Logistics metrics</span><span class="skill-tag">Risk assessment frameworks</span></div>
+<div class="skills-valued-label">Professional</div>
+<div class="skills-wrap"><span class="skill-tag">Vendor relationship management</span><span class="skill-tag">Systems thinking</span><span class="skill-tag">Tradeoff analysis</span><span class="skill-tag">Cross-functional negotiation</span><span class="skill-tag">Operational pragmatism</span></div>
+</div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Key Credentials</div>
+        <div class="certs-wrap"><span class='cert-tag'>IBUS-745 coursework</span><span class='cert-tag'>Data visualization portfolio</span><span class='cert-tag'>ISSP</span><span class='cert-tag'>Relevant sourcing certificates</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Work Context</div>
+        <div class="detail-grid" style="margin-top:var(--space-2)">
+          <div class="detail-item"><div class="detail-item-label">Common Backgrounds</div><div class="detail-item-value">Supply chain, operations, business, sustainability, analytics</div></div>
+          <div class="detail-item"><div class="detail-item-label">Typical Employers</div><div class="detail-item-value">Manufacturers, retailers, logistics firms, food companies, consultancies</div></div>
+          <div class="detail-item"><div class="detail-item-label">Hours / Week</div><div class="detail-item-value">45-60 hrs</div></div>
+          <div class="detail-item"><div class="detail-item-label">Comp Structure</div><div class="detail-item-value">Moderate</div></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="kogod-sl">
+        <div class="kogod-panel">
+          <div class="kogod-panel-header"><span class="kogod-panel-title">How to Prepare at AU + Kogod</span></div>
+          <div class="kogod-section"><div class="kogod-section-label">Key Courses</div><div class="kogod-tags"><span class='kogod-tag'>IBUS-745 Global Supply Chain Management</span><span class='kogod-tag'>ACCT-688 Sustainability Reporting and Analysis</span><span class='kogod-tag'>ENVS-654 Geographic Information Systems</span><span class='kogod-tag'>KSB-612 Strategic Thinking for Decisions</span></div></div>
+          <div class="kogod-section"><div class="kogod-section-label">Experiences, Publishing & Networking</div><div class="kogod-tags"><a class='kogod-tag' href='https://kogod.american.edu/case-competition' target='_blank' rel='noopener noreferrer'>Case competitions</a><span class='kogod-tag'>Network and build relationships</span><a class='kogod-tag' href='https://careers.kogod.american.edu/channels/energy-sustainability/' target='_blank' rel='noopener noreferrer'>Energy and Sustainability Industry page</a><span class='kogod-tag'>Cross-school operations and environment programming</span></div></div>
+          <div class="kogod-tip"><strong>Pro tip:</strong> Students should be able to explain how sustainability shows up in sourcing, transportation, resilience, supplier standards, and cost tradeoffs—not just in mission language.</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="pivot-sl">
+        <div class="pivot-panel">
+          <div class="pivot-panel-header"><span class="pivot-panel-title">Pivoting Into Sustainable Supply Chain &amp; Logistics</span></div>
+          <div class="pivot-section"><div class="pivot-section-label">Transferable Backgrounds</div><div class="pivot-tags"><span class='pivot-tag'>Operations</span><span class='pivot-tag'>Procurement</span><span class='pivot-tag'>Military logistics</span><span class='pivot-tag'>Retail</span><span class='pivot-tag'>Data analytics</span></div></div>
+          <div class="pivot-section"><div class="pivot-section-label">Graduate Pivot Roadmap</div><ul class="pivot-steps"><li class='pivot-step'><span class='pivot-step-num'>1</span><span>Start with one value chain and map where environmental and social risks appear.</span></li><li class='pivot-step'><span class='pivot-step-num'>2</span><span>Build familiarity with supplier questionnaires, traceability concepts, and logistics metrics.</span></li><li class='pivot-step'><span class='pivot-step-num'>3</span><span>Use a class project to recommend a practical sourcing or resilience improvement.</span></li><li class='pivot-step'><span class='pivot-step-num'>4</span><span>Target sectors where supply chain sustainability is already a business priority.</span></li></ul></div>
+          <div class="pivot-tip">This pathway is strong for students who enjoy systems thinking, tradeoffs, and operational problem solving more than public-facing advocacy.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+<article class="card" data-category="operations" data-name="Circular Economy, Waste &amp; Materials Management" data-salary-mid="90">
+  <div class="card-header">
+    <div class="card-top">
+      <div>
+        <span class="card-category-badge">Operations</span>
+      </div>
+    </div>
+    <h2 class="card-title">Circular Economy, Waste &amp; Materials Management</h2>
+    <p class="card-subtitle">Reduce waste, redesign material flows, expand reuse and recycling, and move organizations toward circular systems.</p>
+    <p class="best-for"><strong>Best for students who...</strong> like hands-on problem solving, behavior change, materials, reuse, and visible operational impact.</p>
+  </div>
+  <div class="salary-section">
+    <div class="salary-header">
+      <span class="salary-label">Directional U.S. pay context</span>
+      <span class="salary-total">62K-92K <span>typical range</span></span>
+    </div>
+    <div class="salary-levels">
+      <div class="salary-row"><span class="salary-level-name">Early career</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:38%;background:var(--color-primary);opacity:.8"></div></div><span class="salary-amount">62K-82K</span></div>
+      <div class="salary-row"><span class="salary-level-name">Experienced</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:72%;background:var(--color-primary)"></div></div><span class="salary-amount">90K-140K</span></div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-description">These roles can involve zero-waste strategy, packaging, waste diversion, circular product systems, materials recovery, and municipal or corporate waste programs. Entry roles often combine operations, reporting, vendor coordination, education, and project support.</p>
+  </div>
+  <div class="card-footer">
+    <div class="tab-buttons">
+      <button class="tab-btn tab-details" data-tab="details" data-card="cw">Details</button>
+      <button class="tab-btn tab-kogod" data-tab="kogod" data-card="cw"><div class="tab-dot" style="background:var(--color-kogod)"></div>Kogod Prep</button>
+      <button class="tab-btn tab-pivot" data-tab="pivot" data-card="cw"><div class="tab-dot" style="background:var(--color-pivot)"></div>Pivot Guide</button>
+    </div>
+    <div class="tab-panels" id="panels-cw">
+      <div class="tab-panel" id="details-cw">
+                <div class="section-title" style="margin-bottom:var(--space-2)">Core Skills</div>
+        <div class="skills-wrap"><span class='skill-tag'>Waste Audits</span><span class='skill-tag'>Circular Design Thinking</span><span class='skill-tag'>Vendor Coordination</span><span class='skill-tag'>Program Tracking</span><span class='skill-tag'>Materials Strategy</span><span class='skill-tag'>Stakeholder Education</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Career Path</div>
+        <div class="roles-list"><div class="role-item">Program Coordinator → Waste / Circularity Specialist → Manager → Senior Manager, Circular Economy → Director, Materials Strategy</div></div>
+        <div class="skills-valued-group">
+<div class="section-title" style="margin-top:var(--space-4)">CliftonStrengths that may help</div>
+<div class="strengths-wrap"><span class="strength-tag cs-tag-executing">Restorative</span><span class="strength-tag cs-tag-strategic">Ideation</span><span class="strength-tag cs-tag-executing">Arranger</span><span class="strength-tag cs-tag-relationship">Connectedness</span><span class="strength-tag cs-tag-relationship">Adaptability</span></div>
+<div class="skills-valued-label">Technical</div>
+<div class="skills-wrap"><span class="skill-tag">Waste auditing</span><span class="skill-tag">Circular design frameworks</span><span class="skill-tag">Diversion metrics</span><span class="skill-tag">Materials lifecycle analysis</span><span class="skill-tag">Program tracking tools</span></div>
+<div class="skills-valued-label">Professional</div>
+<div class="skills-wrap"><span class="skill-tag">Behavior change facilitation</span><span class="skill-tag">Vendor coordination</span><span class="skill-tag">Community engagement</span><span class="skill-tag">Implementation mindset</span><span class="skill-tag">Creative problem solving</span></div>
+</div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Key Credentials</div>
+        <div class="certs-wrap"><span class='cert-tag'>LEED Green Associate</span><span class='cert-tag'>ISSP</span><span class='cert-tag'>Portfolio of waste or circularity projects</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Work Context</div>
+        <div class="detail-grid" style="margin-top:var(--space-2)">
+          <div class="detail-item"><div class="detail-item-label">Common Backgrounds</div><div class="detail-item-value">Sustainability, operations, environmental studies, urban systems, business</div></div>
+          <div class="detail-item"><div class="detail-item-label">Typical Employers</div><div class="detail-item-value">Cities, universities, consumer brands, waste firms, nonprofits, consultancies</div></div>
+          <div class="detail-item"><div class="detail-item-label">Hours / Week</div><div class="detail-item-value">40-55 hrs</div></div>
+          <div class="detail-item"><div class="detail-item-label">Comp Structure</div><div class="detail-item-value">Variable</div></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="kogod-cw">
+        <div class="kogod-panel">
+          <div class="kogod-panel-header"><span class="kogod-panel-title">How to Prepare at AU + Kogod</span></div>
+          <div class="kogod-section"><div class="kogod-section-label">Key Courses</div><div class="kogod-tags"><span class='kogod-tag'>MGMT-685 Sustainability and Technology</span><span class='kogod-tag'>MGMT-685 Sustainable Food Systems</span><span class='kogod-tag'>IBUS-745 Global Supply Chain Management</span><span class='kogod-tag'>SIS-620 Sustainable Design and LEED</span></div></div>
+          <div class="kogod-section"><div class="kogod-section-label">Experiences, Publishing & Networking</div><div class="kogod-tags"><span class='kogod-tag'>Campus sustainability activities</span><a class='kogod-tag' href='https://www.american.edu/centers/' target='_blank' rel='noopener noreferrer'>AU centers network</a><a class='kogod-tag' href='https://kogod.american.edu/case-competition' target='_blank' rel='noopener noreferrer'>Case competition work</a><span class='kogod-tag'>Network and build relationships</span></div></div>
+          <div class="kogod-tip"><strong>Pro tip:</strong> Show that you understand behavior change and systems design together. Waste work is rarely just technical or just communications—it is both.</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="pivot-cw">
+        <div class="pivot-panel">
+          <div class="pivot-panel-header"><span class="pivot-panel-title">Pivoting Into Circular Economy, Waste &amp; Materials Management</span></div>
+          <div class="pivot-section"><div class="pivot-section-label">Transferable Backgrounds</div><div class="pivot-tags"><span class='pivot-tag'>Campus sustainability</span><span class='pivot-tag'>Operations</span><span class='pivot-tag'>Facilities</span><span class='pivot-tag'>Consumer goods</span><span class='pivot-tag'>Local government</span></div></div>
+          <div class="pivot-section"><div class="pivot-section-label">Graduate Pivot Roadmap</div><ul class="pivot-steps"><li class='pivot-step'><span class='pivot-step-num'>1</span><span>Conduct or simulate a waste audit and turn it into recommendations.</span></li><li class='pivot-step'><span class='pivot-step-num'>2</span><span>Learn the economics of reuse, diversion, and materials management.</span></li><li class='pivot-step'><span class='pivot-step-num'>3</span><span>Target institutions with visible circularity or zero-waste goals.</span></li><li class='pivot-step'><span class='pivot-step-num'>4</span><span>Use student-led projects to demonstrate implementation skills.</span></li></ul></div>
+          <div class="pivot-tip">This field rewards students who can move from aspiration to implementation and who are comfortable coordinating across vendors, users, and operations teams; it can also be a realistic home for students who considered consulting but prefer concrete operational impact.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+<article class="card" data-category="systems" data-name="Urban Planning, Buildings &amp; Resilient Infrastructure" data-salary-mid="98">
+  <div class="card-header">
+    <div class="card-top">
+      <div>
+        <span class="card-category-badge">Systems</span>
+      </div>
+    </div>
+    <h2 class="card-title">Urban Planning, Buildings &amp; Resilient Infrastructure</h2>
+    <p class="card-subtitle">Work on sustainable buildings, resilient communities, transit-adjacent planning, and place-based climate solutions.</p>
+    <p class="best-for"><strong>Best for students who...</strong> care about buildings, neighborhoods, mobility, resilience, and how sustainability shows up in real places.</p>
+  </div>
+  <div class="salary-section">
+    <div class="salary-header">
+      <span class="salary-label">Directional U.S. pay context</span>
+      <span class="salary-total">68K-98K <span>typical range</span></span>
+    </div>
+    <div class="salary-levels">
+      <div class="salary-row"><span class="salary-level-name">Early career</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:38%;background:var(--color-primary);opacity:.8"></div></div><span class="salary-amount">68K-88K</span></div>
+      <div class="salary-row"><span class="salary-level-name">Experienced</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:72%;background:var(--color-primary)"></div></div><span class="salary-amount">98K-150K</span></div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-description">These roles connect sustainability with the built environment, infrastructure, design standards, and urban systems. Students often enter through planning, sustainability coordination, building performance, LEED-related, or project support roles in public, nonprofit, consulting, or institutional settings.</p>
+  </div>
+  <div class="card-footer">
+    <div class="tab-buttons">
+      <button class="tab-btn tab-details" data-tab="details" data-card="up">Details</button>
+      <button class="tab-btn tab-kogod" data-tab="kogod" data-card="up"><div class="tab-dot" style="background:var(--color-kogod)"></div>Kogod Prep</button>
+      <button class="tab-btn tab-pivot" data-tab="pivot" data-card="up"><div class="tab-dot" style="background:var(--color-pivot)"></div>Pivot Guide</button>
+    </div>
+    <div class="tab-panels" id="panels-up">
+      <div class="tab-panel" id="details-up">
+                <div class="section-title" style="margin-bottom:var(--space-2)">Core Skills</div>
+        <div class="skills-wrap"><span class='skill-tag'>Systems Thinking</span><span class='skill-tag'>Stakeholder Engagement</span><span class='skill-tag'>GIS</span><span class='skill-tag'>Project Coordination</span><span class='skill-tag'>Building / Place-based Sustainability</span><span class='skill-tag'>Policy Interpretation</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Career Path</div>
+        <div class="roles-list"><div class="role-item">Planning / Sustainability Coordinator → Analyst / Specialist → Project Manager → Senior Manager / Planner → Director</div></div>
+        <div class="skills-valued-group">
+<div class="section-title" style="margin-top:var(--space-4)">CliftonStrengths that may help</div>
+<div class="strengths-wrap"><span class="strength-tag cs-tag-strategic">Futuristic</span><span class="strength-tag cs-tag-relationship">Connectedness</span><span class="strength-tag cs-tag-executing">Responsibility</span><span class="strength-tag cs-tag-strategic">Context</span><span class="strength-tag cs-tag-relationship">Developer</span></div>
+<div class="skills-valued-label">Technical</div>
+<div class="skills-wrap"><span class="skill-tag">GIS / spatial analysis</span><span class="skill-tag">LEED / green building standards</span><span class="skill-tag">Building performance basics</span><span class="skill-tag">Resilience planning</span><span class="skill-tag">Policy interpretation</span></div>
+<div class="skills-valued-label">Professional</div>
+<div class="skills-wrap"><span class="skill-tag">Stakeholder engagement</span><span class="skill-tag">Place-based thinking</span><span class="skill-tag">Community-centered design</span><span class="skill-tag">Project coordination</span><span class="skill-tag">Translating standards into practice</span></div>
+</div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Key Credentials</div>
+        <div class="certs-wrap"><span class='cert-tag'>LEED Green Associate</span><span class='cert-tag'>GIS coursework</span><span class='cert-tag'>Sustainable design coursework</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Work Context</div>
+        <div class="detail-grid" style="margin-top:var(--space-2)">
+          <div class="detail-item"><div class="detail-item-label">Common Backgrounds</div><div class="detail-item-value">Urban planning-adjacent, sustainability, policy, design, business</div></div>
+          <div class="detail-item"><div class="detail-item-label">Typical Employers</div><div class="detail-item-value">Cities, developers, universities, consulting firms, architecture / engineering-adjacent groups</div></div>
+          <div class="detail-item"><div class="detail-item-label">Hours / Week</div><div class="detail-item-value">40-55 hrs</div></div>
+          <div class="detail-item"><div class="detail-item-label">Comp Structure</div><div class="detail-item-value">Generally modest</div></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="kogod-up">
+        <div class="kogod-panel">
+          <div class="kogod-panel-header"><span class="kogod-panel-title">How to Prepare at AU + Kogod</span></div>
+          <div class="kogod-section"><div class="kogod-section-label">Key Courses</div><div class="kogod-tags"><span class='kogod-tag'>SIS-620 Sustainable Design and LEED</span><span class='kogod-tag'>ENVS-654 Geographic Information Systems</span><span class='kogod-tag'>ENVS-505 Energy</span><span class='kogod-tag'>KSB-612 Strategic Thinking for Decisions</span></div></div>
+          <div class="kogod-section"><div class="kogod-section-label">Experiences, Publishing & Networking</div><div class="kogod-tags"><a class='kogod-tag' href='https://www.american.edu/centers/' target='_blank' rel='noopener noreferrer'>AU centers and community-focused initiatives</a><span class='kogod-tag'>Network and build relationships</span><span class='kogod-tag'>Cross-school faculty network</span><a class='kogod-tag' href='https://kogod.american.edu/case-competition' target='_blank' rel='noopener noreferrer'>Relevant case or consulting projects</a></div></div>
+          <div class="kogod-tip"><strong>Pro tip:</strong> Students should talk concretely about buildings, neighborhoods, mobility, resilience, and implementation—not only broad sustainability goals.</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="pivot-up">
+        <div class="pivot-panel">
+          <div class="pivot-panel-header"><span class="pivot-panel-title">Pivoting Into Urban Planning, Buildings &amp; Resilient Infrastructure</span></div>
+          <div class="pivot-section"><div class="pivot-section-label">Transferable Backgrounds</div><div class="pivot-tags"><span class='pivot-tag'>GIS</span><span class='pivot-tag'>Community development</span><span class='pivot-tag'>Facilities</span><span class='pivot-tag'>Policy</span><span class='pivot-tag'>Project coordination</span></div></div>
+          <div class="pivot-section"><div class="pivot-section-label">Graduate Pivot Roadmap</div><ul class="pivot-steps"><li class='pivot-step'><span class='pivot-step-num'>1</span><span>Use GIS or building-related coursework to build a visible applied project.</span></li><li class='pivot-step'><span class='pivot-step-num'>2</span><span>Follow DC and regional resilience, planning, or building initiatives closely.</span></li><li class='pivot-step'><span class='pivot-step-num'>3</span><span>Target institutions where sustainability work is tied to capital planning or place-based strategy.</span></li><li class='pivot-step'><span class='pivot-step-num'>4</span><span>Build fluency in how technical standards connect to stakeholder priorities.</span></li></ul></div>
+          <div class="pivot-tip">This path is ideal for students who care about how sustainability appears in real spaces, systems, and community outcomes and who may want a more implementation-focused alternative to generalist consulting.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+<article class="card" data-category="systems" data-name="Food, Agriculture &amp; Sustainable Land Systems" data-salary-mid="90">
+  <div class="card-header">
+    <div class="card-top">
+      <div>
+        <span class="card-category-badge">Systems</span>
+      </div>
+    </div>
+    <h2 class="card-title">Food, Agriculture &amp; Sustainable Land Systems</h2>
+    <p class="card-subtitle">Address food systems, regenerative practices, sourcing, food waste, land use, and mission-driven supply networks.</p>
+    <p class="best-for"><strong>Best for students who...</strong> connect food, equity, sourcing, land, operations, and policy into mission-driven work.</p>
+  </div>
+  <div class="salary-section">
+    <div class="salary-header">
+      <span class="salary-label">Directional U.S. pay context</span>
+      <span class="salary-total">60K-90K <span>typical range</span></span>
+    </div>
+    <div class="salary-levels">
+      <div class="salary-row"><span class="salary-level-name">Early career</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:38%;background:var(--color-primary);opacity:.8"></div></div><span class="salary-amount">60K-80K</span></div>
+      <div class="salary-row"><span class="salary-level-name">Experienced</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:72%;background:var(--color-primary)"></div></div><span class="salary-amount">90K-135K</span></div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-description">These roles span nonprofits, food companies, policy organizations, foundations, and consultancies working on food access, regenerative systems, sourcing, and agricultural sustainability. Entry work often includes research, program support, operations, partnerships, and communications.</p>
+  </div>
+  <div class="card-footer">
+    <div class="tab-buttons">
+      <button class="tab-btn tab-details" data-tab="details" data-card="fa">Details</button>
+      <button class="tab-btn tab-kogod" data-tab="kogod" data-card="fa"><div class="tab-dot" style="background:var(--color-kogod)"></div>Kogod Prep</button>
+      <button class="tab-btn tab-pivot" data-tab="pivot" data-card="fa"><div class="tab-dot" style="background:var(--color-pivot)"></div>Pivot Guide</button>
+    </div>
+    <div class="tab-panels" id="panels-fa">
+      <div class="tab-panel" id="details-fa">
+                <div class="section-title" style="margin-bottom:var(--space-2)">Core Skills</div>
+        <div class="skills-wrap"><span class='skill-tag'>Systems Mapping</span><span class='skill-tag'>Stakeholder Engagement</span><span class='skill-tag'>Research</span><span class='skill-tag'>Program Support</span><span class='skill-tag'>Supply Chain Awareness</span><span class='skill-tag'>Issue Communication</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Career Path</div>
+        <div class="roles-list"><div class="role-item">Program / Research Assistant → Specialist / Analyst → Manager → Senior Manager / Director, Food Systems or Agriculture Programs</div></div>
+        <div class="skills-valued-group">
+<div class="section-title" style="margin-top:var(--space-4)">CliftonStrengths that may help</div>
+<div class="strengths-wrap"><span class="strength-tag cs-tag-relationship">Connectedness</span><span class="strength-tag cs-tag-executing">Belief</span><span class="strength-tag cs-tag-strategic">Input</span><span class="strength-tag cs-tag-relationship">Empathy</span><span class="strength-tag cs-tag-relationship">Developer</span></div>
+<div class="skills-valued-label">Technical</div>
+<div class="skills-wrap"><span class="skill-tag">Food systems mapping</span><span class="skill-tag">Supply chain awareness</span><span class="skill-tag">Research methods</span><span class="skill-tag">Program evaluation</span><span class="skill-tag">GIS or policy tools</span></div>
+<div class="skills-valued-label">Professional</div>
+<div class="skills-wrap"><span class="skill-tag">Issue storytelling</span><span class="skill-tag">Partnership building</span><span class="skill-tag">Community listening</span><span class="skill-tag">Mission-driven persistence</span><span class="skill-tag">Connecting equity to operations</span></div>
+</div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Key Credentials</div>
+        <div class="certs-wrap"><span class='cert-tag'>MGMT-685 Sustainable Food Systems</span><span class='cert-tag'>GIS or policy coursework</span><span class='cert-tag'>Relevant writing portfolio</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Work Context</div>
+        <div class="detail-grid" style="margin-top:var(--space-2)">
+          <div class="detail-item"><div class="detail-item-label">Common Backgrounds</div><div class="detail-item-value">Sustainability, policy, business, international affairs, agriculture-adjacent interests</div></div>
+          <div class="detail-item"><div class="detail-item-label">Typical Employers</div><div class="detail-item-value">NGOs, food brands, foundations, consultancies, government, trade associations</div></div>
+          <div class="detail-item"><div class="detail-item-label">Hours / Week</div><div class="detail-item-value">40-55 hrs</div></div>
+          <div class="detail-item"><div class="detail-item-label">Comp Structure</div><div class="detail-item-value">Usually modest</div></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="kogod-fa">
+        <div class="kogod-panel">
+          <div class="kogod-panel-header"><span class="kogod-panel-title">How to Prepare at AU + Kogod</span></div>
+          <div class="kogod-section"><div class="kogod-section-label">Key Courses</div><div class="kogod-tags"><span class='kogod-tag'>MGMT-685 Sustainable Food Systems</span><span class='kogod-tag'>IBUS-745 Global Supply Chain Management</span><span class='kogod-tag'>KSB-612 Strategic Thinking for Decisions</span><span class='kogod-tag'>MGMT-626 Management Consulting Practices and Methodologies</span></div></div>
+          <div class="kogod-section"><div class="kogod-section-label">Experiences, Publishing & Networking</div><div class="kogod-tags"><a class='kogod-tag' href='https://kogod.american.edu/ksr' target='_blank' rel='noopener noreferrer'>Kogod Sustainability Review</a><span class='kogod-tag'>Network and build relationships</span><span class='kogod-tag'>Cross-school policy and food-systems events</span><a class='kogod-tag' href='https://www.american.edu/centers/' target='_blank' rel='noopener noreferrer'>Centers and faculty research</a></div></div>
+          <div class="kogod-tip"><strong>Pro tip:</strong> Students become more competitive when they can connect food systems sustainability to sourcing, equity, operations, and policy rather than treating it as only a mission field.</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="pivot-fa">
+        <div class="pivot-panel">
+          <div class="pivot-panel-header"><span class="pivot-panel-title">Pivoting Into Food, Agriculture &amp; Sustainable Land Systems</span></div>
+          <div class="pivot-section"><div class="pivot-section-label">Transferable Backgrounds</div><div class="pivot-tags"><span class='pivot-tag'>Nonprofits</span><span class='pivot-tag'>Supply chain</span><span class='pivot-tag'>Public policy</span><span class='pivot-tag'>Research</span><span class='pivot-tag'>Community engagement</span></div></div>
+          <div class="pivot-section"><div class="pivot-section-label">Graduate Pivot Roadmap</div><ul class="pivot-steps"><li class='pivot-step'><span class='pivot-step-num'>1</span><span>Choose a food-systems angle such as sourcing, food waste, access, or regenerative practices.</span></li><li class='pivot-step'><span class='pivot-step-num'>2</span><span>Create one strong writing or research sample in that niche.</span></li><li class='pivot-step'><span class='pivot-step-num'>3</span><span>Map employers by issue and geography, not just by job title.</span></li><li class='pivot-step'><span class='pivot-step-num'>4</span><span>Use networking to learn how organizations describe their work internally.</span></li></ul></div>
+          <div class="pivot-tip">This pathway often rewards students with a clear issue lens and evidence of genuine long-term interest more than a purely generalist application does, which can make it a better fit than broad consulting paths for many MSSM students.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+<article class="card" data-category="systems" data-name="Resource Management, Water &amp; Natural Systems" data-salary-mid="90">
+  <div class="card-header">
+    <div class="card-top">
+      <div>
+        <span class="card-category-badge">Systems</span>
+      </div>
+    </div>
+    <h2 class="card-title">Resource Management, Water &amp; Natural Systems</h2>
+    <p class="card-subtitle">Support water stewardship, ecosystem strategy, natural resource management, and resilience-oriented environmental programs.</p>
+    <p class="best-for"><strong>Best for students who...</strong> are drawn to water, ecosystems, conservation, resilience, and cross-sector environmental programs.</p>
+  </div>
+  <div class="salary-section">
+    <div class="salary-header">
+      <span class="salary-label">Directional U.S. pay context</span>
+      <span class="salary-total">62K-95K <span>typical range</span></span>
+    </div>
+    <div class="salary-levels">
+      <div class="salary-row"><span class="salary-level-name">Early career</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:38%;background:var(--color-primary);opacity:.8"></div></div><span class="salary-amount">62K-82K</span></div>
+      <div class="salary-row"><span class="salary-level-name">Experienced</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:72%;background:var(--color-primary)"></div></div><span class="salary-amount">90K-145K</span></div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-description">These roles appear in NGOs, public agencies, utilities, consulting, and mission-driven companies. Students may enter through analyst, coordinator, or specialist roles focused on water, ecosystems, resilience, conservation strategy, or environmental program implementation.</p>
+  </div>
+  <div class="card-footer">
+    <div class="tab-buttons">
+      <button class="tab-btn tab-details" data-tab="details" data-card="rw">Details</button>
+      <button class="tab-btn tab-kogod" data-tab="kogod" data-card="rw"><div class="tab-dot" style="background:var(--color-kogod)"></div>Kogod Prep</button>
+      <button class="tab-btn tab-pivot" data-tab="pivot" data-card="rw"><div class="tab-dot" style="background:var(--color-pivot)"></div>Pivot Guide</button>
+    </div>
+    <div class="tab-panels" id="panels-rw">
+      <div class="tab-panel" id="details-rw">
+                <div class="section-title" style="margin-bottom:var(--space-2)">Core Skills</div>
+        <div class="skills-wrap"><span class='skill-tag'>Program Analysis</span><span class='skill-tag'>Research</span><span class='skill-tag'>Stakeholder Engagement</span><span class='skill-tag'>Environmental Strategy</span><span class='skill-tag'>Data Interpretation</span><span class='skill-tag'>Project Support</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Career Path</div>
+        <div class="roles-list"><div class="role-item">Coordinator / Analyst → Specialist → Manager → Senior Manager / Program Director → Director, Resource Strategy</div></div>
+        <div class="skills-valued-group">
+<div class="section-title" style="margin-top:var(--space-4)">CliftonStrengths that may help</div>
+<div class="strengths-wrap"><span class="strength-tag cs-tag-strategic">Analytical</span><span class="strength-tag cs-tag-relationship">Connectedness</span><span class="strength-tag cs-tag-executing">Responsibility</span><span class="strength-tag cs-tag-strategic">Futuristic</span><span class="strength-tag cs-tag-strategic">Learner</span></div>
+<div class="skills-valued-label">Technical</div>
+<div class="skills-wrap"><span class="skill-tag">Environmental modeling</span><span class="skill-tag">GIS / spatial data</span><span class="skill-tag">Water stewardship frameworks</span><span class="skill-tag">Ecosystem strategy</span><span class="skill-tag">Data interpretation</span></div>
+<div class="skills-valued-label">Professional</div>
+<div class="skills-wrap"><span class="skill-tag">Systems thinking</span><span class="skill-tag">Cross-sector coordination</span><span class="skill-tag">Mission fluency</span><span class="skill-tag">Analytical writing</span><span class="skill-tag">Long-term planning orientation</span></div>
+</div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Key Credentials</div>
+        <div class="certs-wrap"><span class='cert-tag'>ISSP</span><span class='cert-tag'>GIS coursework</span><span class='cert-tag'>Environmental modeling exposure</span><span class='cert-tag'>Relevant issue-area publications</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Work Context</div>
+        <div class="detail-grid" style="margin-top:var(--space-2)">
+          <div class="detail-item"><div class="detail-item-label">Common Backgrounds</div><div class="detail-item-value">Sustainability, environmental studies, policy, business with environmental focus</div></div>
+          <div class="detail-item"><div class="detail-item-label">Typical Employers</div><div class="detail-item-value">Utilities, NGOs, agencies, consulting firms, research institutions</div></div>
+          <div class="detail-item"><div class="detail-item-label">Hours / Week</div><div class="detail-item-value">40-55 hrs</div></div>
+          <div class="detail-item"><div class="detail-item-label">Comp Structure</div><div class="detail-item-value">Variable by sector</div></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="kogod-rw">
+        <div class="kogod-panel">
+          <div class="kogod-panel-header"><span class="kogod-panel-title">How to Prepare at AU + Kogod</span></div>
+          <div class="kogod-section"><div class="kogod-section-label">Key Courses</div><div class="kogod-tags"><span class='kogod-tag'>ENVS-696 Environmental Modeling</span><span class='kogod-tag'>ENVS-654 Geographic Information Systems</span><span class='kogod-tag'>ENVS-505 Energy</span><span class='kogod-tag'>KSB-612 Strategic Thinking for Decisions</span></div></div>
+          <div class="kogod-section"><div class="kogod-section-label">Experiences, Publishing & Networking</div><div class="kogod-tags"><a class='kogod-tag' href='https://www.american.edu/centers/' target='_blank' rel='noopener noreferrer'>AU environmental centers</a><span class='kogod-tag'>Network and build relationships</span><span class='kogod-tag'>Cross-school faculty and events</span><a class='kogod-tag' href='https://kogod.american.edu/ksr' target='_blank' rel='noopener noreferrer'>Kogod Sustainability Review or applied writing opportunities</a></div></div>
+          <div class="kogod-tip"><strong>Pro tip:</strong> This is a strong pathway for students who like mission-driven work but still want roles that require analysis, systems thinking, and cross-sector coordination.</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="pivot-rw">
+        <div class="pivot-panel">
+          <div class="pivot-panel-header"><span class="pivot-panel-title">Pivoting Into Resource Management, Water &amp; Natural Systems</span></div>
+          <div class="pivot-section"><div class="pivot-section-label">Transferable Backgrounds</div><div class="pivot-tags"><span class='pivot-tag'>Environmental policy</span><span class='pivot-tag'>Utilities</span><span class='pivot-tag'>Research</span><span class='pivot-tag'>Program support</span><span class='pivot-tag'>GIS</span></div></div>
+          <div class="pivot-section"><div class="pivot-section-label">Graduate Pivot Roadmap</div><ul class="pivot-steps"><li class='pivot-step'><span class='pivot-step-num'>1</span><span>Develop one issue specialty such as water, resilience, or ecosystem strategy.</span></li><li class='pivot-step'><span class='pivot-step-num'>2</span><span>Build a short portfolio that combines data, policy, and implementation thinking.</span></li><li class='pivot-step'><span class='pivot-step-num'>3</span><span>Track DC-based institutions plus national organizations with environmental portfolios.</span></li><li class='pivot-step'><span class='pivot-step-num'>4</span><span>Use faculty, centers, and events to deepen your niche knowledge.</span></li></ul></div>
+          <div class="pivot-tip">Natural systems roles often hire students who can bridge mission fluency and practical execution rather than candidates who are only broadly interested in the environment, and they may be more accessible than top-tier consulting roles for internationally mobile or mission-driven students.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+<article class="card" data-category="energy" data-name="Clean Energy &amp; Electrification" data-salary-mid="115">
+  <div class="card-header">
+    <div class="card-top">
+      <div>
+        <span class="card-category-badge">Energy</span>
+      </div>
+    </div>
+    <h2 class="card-title">Clean Energy &amp; Electrification</h2>
+    <p class="card-subtitle">Support renewables, grid and electrification strategy, energy markets, clean-tech growth, and decarbonization projects.</p>
+    <p class="best-for"><strong>Best for students who...</strong> like fast-moving markets, energy systems, policy incentives, technology, and project development.</p>
+  </div>
+  <div class="salary-section">
+    <div class="salary-header">
+      <span class="salary-label">Directional U.S. pay context</span>
+      <span class="salary-total">75K-115K <span>typical range</span></span>
+    </div>
+    <div class="salary-levels">
+      <div class="salary-row"><span class="salary-level-name">Early career</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:38%;background:var(--color-primary);opacity:.8"></div></div><span class="salary-amount">75K-95K</span></div>
+      <div class="salary-row"><span class="salary-level-name">Experienced</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:72%;background:var(--color-primary)"></div></div><span class="salary-amount">115K-175K+</span></div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-description">These roles span project development support, market analysis, business strategy, partnerships, policy, and operations across utilities, developers, startups, financiers, and advisory firms. Students do well when they can connect energy concepts to policy, market dynamics, and business execution.</p>
+  </div>
+  <div class="card-footer">
+    <div class="tab-buttons">
+      <button class="tab-btn tab-details" data-tab="details" data-card="ce">Details</button>
+      <button class="tab-btn tab-kogod" data-tab="kogod" data-card="ce"><div class="tab-dot" style="background:var(--color-kogod)"></div>Kogod Prep</button>
+      <button class="tab-btn tab-pivot" data-tab="pivot" data-card="ce"><div class="tab-dot" style="background:var(--color-pivot)"></div>Pivot Guide</button>
+    </div>
+    <div class="tab-panels" id="panels-ce">
+      <div class="tab-panel" id="details-ce">
+                <div class="section-title" style="margin-bottom:var(--space-2)">Core Skills</div>
+        <div class="skills-wrap"><span class='skill-tag'>Energy Market Awareness</span><span class='skill-tag'>Research</span><span class='skill-tag'>Financial / Business Analysis</span><span class='skill-tag'>Policy Fluency</span><span class='skill-tag'>Project Support</span><span class='skill-tag'>Stakeholder Communication</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Career Path</div>
+        <div class="roles-list"><div class="role-item">Analyst / Coordinator → Associate / Specialist → Manager → Senior Manager / Director → Strategy or Development Leadership</div></div>
+        <div class="skills-valued-group">
+<div class="section-title" style="margin-top:var(--space-4)">CliftonStrengths that may help</div>
+<div class="strengths-wrap"><span class="strength-tag cs-tag-strategic">Strategic</span><span class="strength-tag cs-tag-strategic">Futuristic</span><span class="strength-tag cs-tag-influencing">Activator</span><span class="strength-tag cs-tag-executing">Achiever</span><span class="strength-tag cs-tag-influencing">Competition</span></div>
+<div class="skills-valued-label">Technical</div>
+<div class="skills-wrap"><span class="skill-tag">Energy market analysis</span><span class="skill-tag">Project finance basics</span><span class="skill-tag">Renewable energy economics</span><span class="skill-tag">Policy & incentive navigation</span><span class="skill-tag">Subsector research</span></div>
+<div class="skills-valued-label">Professional</div>
+<div class="skills-wrap"><span class="skill-tag">Business case development</span><span class="skill-tag">Fast-paced execution</span><span class="skill-tag">Industry networking</span><span class="skill-tag">Comfort with complexity</span><span class="skill-tag">Competitive follow-through</span></div>
+</div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Key Credentials</div>
+        <div class="certs-wrap"><span class='cert-tag'>MGMT-685 Business of Energy</span><span class='cert-tag'>Bloomberg</span><span class='cert-tag'>GARP SCR</span><span class='cert-tag'>Relevant market analysis portfolio</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Work Context</div>
+        <div class="detail-grid" style="margin-top:var(--space-2)">
+          <div class="detail-item"><div class="detail-item-label">Common Backgrounds</div><div class="detail-item-value">Business, sustainability, policy, economics, analytics</div></div>
+          <div class="detail-item"><div class="detail-item-label">Typical Employers</div><div class="detail-item-value">Utilities, developers, startups, advisory firms, public agencies, investors</div></div>
+          <div class="detail-item"><div class="detail-item-label">Hours / Week</div><div class="detail-item-value">45-65 hrs</div></div>
+          <div class="detail-item"><div class="detail-item-label">Comp Structure</div><div class="detail-item-value">Higher in project development and finance-heavy roles</div></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="kogod-ce">
+        <div class="kogod-panel">
+          <div class="kogod-panel-header"><span class="kogod-panel-title">How to Prepare at AU + Kogod</span></div>
+          <div class="kogod-section"><div class="kogod-section-label">Key Courses</div><div class="kogod-tags"><span class='kogod-tag'>MGMT-685 Business of Energy</span><span class='kogod-tag'>ENVS-505 Energy</span><span class='kogod-tag'>FIN-685 Advanced Sustainable Finance</span><span class='kogod-tag'>KSB-612 Strategic Thinking for Decisions</span></div></div>
+          <div class="kogod-section"><div class="kogod-section-label">Experiences, Publishing & Networking</div><div class="kogod-tags"><a class='kogod-tag' href='https://careers.kogod.american.edu/channels/energy-sustainability/' target='_blank' rel='noopener noreferrer'>Energy and Sustainability Industry page</a><a class='kogod-tag' href='https://kogod.american.edu/case-competition' target='_blank' rel='noopener noreferrer'>Case competitions</a><span class='kogod-tag'>Network and build relationships</span><span class='kogod-tag'>Cross-school energy and policy ecosystem</span></div></div>
+          <div class="kogod-tip"><strong>Pro tip:</strong> A student who can explain one subsector deeply—solar, storage, grid, efficiency, EVs, or clean fuels—usually outperforms a student who speaks only in broad energy buzzwords.</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="pivot-ce">
+        <div class="pivot-panel">
+          <div class="pivot-panel-header"><span class="pivot-panel-title">Pivoting Into Clean Energy &amp; Electrification</span></div>
+          <div class="pivot-section"><div class="pivot-section-label">Transferable Backgrounds</div><div class="pivot-tags"><span class='pivot-tag'>Finance</span><span class='pivot-tag'>Policy</span><span class='pivot-tag'>Analytics</span><span class='pivot-tag'>Engineering-adjacent business roles</span><span class='pivot-tag'>Consulting</span></div></div>
+          <div class="pivot-section"><div class="pivot-section-label">Graduate Pivot Roadmap</div><ul class="pivot-steps"><li class='pivot-step'><span class='pivot-step-num'>1</span><span>Choose a subsector and follow its economics, policy drivers, and major players.</span></li><li class='pivot-step'><span class='pivot-step-num'>2</span><span>Create a short market map or investment-style memo on that subsector.</span></li><li class='pivot-step'><span class='pivot-step-num'>3</span><span>Use DC energy and policy events to build industry vocabulary fast.</span></li><li class='pivot-step'><span class='pivot-step-num'>4</span><span>Target roles where business and policy fluency matter as much as engineering depth.</span></li></ul></div>
+          <div class="pivot-tip">This is a strong path for MSSM students because many entry roles need strategic and analytical support rather than pure engineering credentials, but students should expect competitive hiring, many applications, networking intensity, and a clear story about how their skills create value.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+<article class="card" data-category="energy" data-name="Oil, Gas &amp; Industrial Transition" data-salary-mid="120">
+  <div class="card-header">
+    <div class="card-top">
+      <div>
+        <span class="card-category-badge">Energy</span>
+      </div>
+    </div>
+    <h2 class="card-title">Oil, Gas &amp; Industrial Transition</h2>
+    <p class="card-subtitle">Work on transition strategy, decarbonization, methane, industrial emissions, risk, reporting, and sector transformation.</p>
+    <p class="best-for"><strong>Best for students who...</strong> can handle complexity, tradeoffs, transition planning, and pragmatic climate work in high-impact sectors.</p>
+  </div>
+  <div class="salary-section">
+    <div class="salary-header">
+      <span class="salary-label">Directional U.S. pay context</span>
+      <span class="salary-total">80K-120K <span>typical range</span></span>
+    </div>
+    <div class="salary-levels">
+      <div class="salary-row"><span class="salary-level-name">Early career</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:38%;background:var(--color-primary);opacity:.8"></div></div><span class="salary-amount">80K-100K</span></div>
+      <div class="salary-row"><span class="salary-level-name">Experienced</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:72%;background:var(--color-primary)"></div></div><span class="salary-amount">120K-190K+</span></div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-description">This pathway focuses on improving and transforming emissions-intensive sectors rather than avoiding them. Roles may sit in corporate strategy, climate risk, transition planning, reporting, supply chain, public affairs, or advisory teams supporting energy and industrial firms.</p>
+  </div>
+  <div class="card-footer">
+    <div class="tab-buttons">
+      <button class="tab-btn tab-details" data-tab="details" data-card="og">Details</button>
+      <button class="tab-btn tab-kogod" data-tab="kogod" data-card="og"><div class="tab-dot" style="background:var(--color-kogod)"></div>Kogod Prep</button>
+      <button class="tab-btn tab-pivot" data-tab="pivot" data-card="og"><div class="tab-dot" style="background:var(--color-pivot)"></div>Pivot Guide</button>
+    </div>
+    <div class="tab-panels" id="panels-og">
+      <div class="tab-panel" id="details-og">
+                <div class="section-title" style="margin-bottom:var(--space-2)">Core Skills</div>
+        <div class="skills-wrap"><span class='skill-tag'>Transition Strategy</span><span class='skill-tag'>Climate Risk</span><span class='skill-tag'>Stakeholder Communication</span><span class='skill-tag'>Operational Awareness</span><span class='skill-tag'>Reporting</span><span class='skill-tag'>Scenario Thinking</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Career Path</div>
+        <div class="roles-list"><div class="role-item">Analyst → Specialist / Associate → Manager → Senior Manager / Director → Transition Strategy Leadership</div></div>
+        <div class="skills-valued-group">
+<div class="section-title" style="margin-top:var(--space-4)">CliftonStrengths that may help</div>
+<div class="strengths-wrap"><span class="strength-tag cs-tag-strategic">Strategic</span><span class="strength-tag cs-tag-executing">Deliberative</span><span class="strength-tag cs-tag-influencing">Command</span><span class="strength-tag cs-tag-strategic">Context</span><span class="strength-tag cs-tag-executing">Responsibility</span></div>
+<div class="skills-valued-label">Technical</div>
+<div class="skills-wrap"><span class="skill-tag">Transition risk analysis</span><span class="skill-tag">Climate scenario modeling</span><span class="skill-tag">ESG reporting frameworks</span><span class="skill-tag">Energy market awareness</span><span class="skill-tag">Decarbonization strategy</span></div>
+<div class="skills-valued-label">Professional</div>
+<div class="skills-wrap"><span class="skill-tag">Navigating tradeoffs</span><span class="skill-tag">Stakeholder management</span><span class="skill-tag">Change management</span><span class="skill-tag">Clear-eyed pragmatism</span><span class="skill-tag">Credibility under pressure</span></div>
+</div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Key Credentials</div>
+        <div class="certs-wrap"><span class='cert-tag'>GARP SCR</span><span class='cert-tag'>CFA Sustainable Investing Certificate</span><span class='cert-tag'>GRI / FSA / ISSB familiarity</span><span class='cert-tag'>Energy market coursework</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Work Context</div>
+        <div class="detail-grid" style="margin-top:var(--space-2)">
+          <div class="detail-item"><div class="detail-item-label">Common Backgrounds</div><div class="detail-item-value">Business, sustainability, policy, analytics, economics</div></div>
+          <div class="detail-item"><div class="detail-item-label">Typical Employers</div><div class="detail-item-value">Energy firms, industrial companies, consultancies, investors, trade groups</div></div>
+          <div class="detail-item"><div class="detail-item-label">Hours / Week</div><div class="detail-item-value">45-65 hrs</div></div>
+          <div class="detail-item"><div class="detail-item-label">Comp Structure</div><div class="detail-item-value">Often meaningful in private-sector roles</div></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="kogod-og">
+        <div class="kogod-panel">
+          <div class="kogod-panel-header"><span class="kogod-panel-title">How to Prepare at AU + Kogod</span></div>
+          <div class="kogod-section"><div class="kogod-section-label">Key Courses</div><div class="kogod-tags"><span class='kogod-tag'>MGMT-685 Business of Energy</span><span class='kogod-tag'>FIN-685 Advanced Sustainable Finance</span><span class='kogod-tag'>ACCT-688 Sustainability Reporting and Analysis</span><span class='kogod-tag'>ENVS-505 Energy</span></div></div>
+          <div class="kogod-section"><div class="kogod-section-label">Experiences, Publishing & Networking</div><div class="kogod-tags"><a class='kogod-tag' href='https://careers.kogod.american.edu/channels/energy-sustainability/' target='_blank' rel='noopener noreferrer'>Energy and Sustainability Industry page</a><span class='kogod-tag'>Network and build relationships</span><span class='kogod-tag'>Cross-school energy and policy programming</span><a class='kogod-tag' href='https://kogod.american.edu/ksr' target='_blank' rel='noopener noreferrer'>Kogod Sustainability Review thought leadership opportunities</a></div></div>
+          <div class="kogod-tip"><strong>Pro tip:</strong> Students should frame this pathway around transition and industrial decarbonization, not as a contradiction to sustainability. Employers want candidates who understand complexity and change management.</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="pivot-og">
+        <div class="pivot-panel">
+          <div class="pivot-panel-header"><span class="pivot-panel-title">Pivoting Into Oil, Gas &amp; Industrial Transition</span></div>
+          <div class="pivot-section"><div class="pivot-section-label">Transferable Backgrounds</div><div class="pivot-tags"><span class='pivot-tag'>Energy policy</span><span class='pivot-tag'>Finance</span><span class='pivot-tag'>Operations</span><span class='pivot-tag'>Risk</span><span class='pivot-tag'>Public affairs</span></div></div>
+          <div class="pivot-section"><div class="pivot-section-label">Graduate Pivot Roadmap</div><ul class="pivot-steps"><li class='pivot-step'><span class='pivot-step-num'>1</span><span>Learn how transition pressures differ across oil, gas, heavy industry, and adjacent infrastructure.</span></li><li class='pivot-step'><span class='pivot-step-num'>2</span><span>Practice discussing tradeoffs without becoming vague or ideological.</span></li><li class='pivot-step'><span class='pivot-step-num'>3</span><span>Build one sample analysis on transition risk or decarbonization strategy.</span></li><li class='pivot-step'><span class='pivot-step-num'>4</span><span>Target employers and teams where transition work is visibly staffed and funded.</span></li></ul></div>
+          <div class="pivot-tip">This path can be attractive for students who want higher-compensation sectors while still working on real climate transition problems, but students should plan on multiple recruiting cycles and be prepared to start in analyst or associate roles rather than going directly into senior strategy positions.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+<article class="card" data-category="management" data-name="Sustainability Program / Project Management" data-salary-mid="100">
+  <div class="card-header">
+    <div class="card-top">
+      <div>
+        <span class="card-category-badge">Management</span>
+      </div>
+    </div>
+    <h2 class="card-title">Sustainability Program / Project Management</h2>
+    <p class="card-subtitle">Coordinate initiatives, budgets, stakeholders, timelines, and implementation across sustainability portfolios.</p>
+    <p class="best-for"><strong>Best for students who...</strong> like organizing people, timelines, meetings, deliverables, and moving sustainability work forward.</p>
+  </div>
+  <div class="salary-section">
+    <div class="salary-header">
+      <span class="salary-label">Directional U.S. pay context</span>
+      <span class="salary-total">70K-100K <span>typical range</span></span>
+    </div>
+    <div class="salary-levels">
+      <div class="salary-row"><span class="salary-level-name">Early career</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:38%;background:var(--color-primary);opacity:.8"></div></div><span class="salary-amount">70K-90K</span></div>
+      <div class="salary-row"><span class="salary-level-name">Experienced</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:72%;background:var(--color-primary)"></div></div><span class="salary-amount">100K-150K</span></div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-description">These roles are common because almost every sustainability team needs people who can move work across functions. Entry roles often involve project coordination, internal reporting, meeting management, issue tracking, and helping ideas become implemented programs.</p>
+  </div>
+  <div class="card-footer">
+    <div class="tab-buttons">
+      <button class="tab-btn tab-details" data-tab="details" data-card="pm">Details</button>
+      <button class="tab-btn tab-kogod" data-tab="kogod" data-card="pm"><div class="tab-dot" style="background:var(--color-kogod)"></div>Kogod Prep</button>
+      <button class="tab-btn tab-pivot" data-tab="pivot" data-card="pm"><div class="tab-dot" style="background:var(--color-pivot)"></div>Pivot Guide</button>
+    </div>
+    <div class="tab-panels" id="panels-pm">
+      <div class="tab-panel" id="details-pm">
+                <div class="section-title" style="margin-bottom:var(--space-2)">Core Skills</div>
+        <div class="skills-wrap"><span class='skill-tag'>Project Management</span><span class='skill-tag'>Cross-functional Coordination</span><span class='skill-tag'>Execution</span><span class='skill-tag'>Stakeholder Management</span><span class='skill-tag'>Presentation Skills</span><span class='skill-tag'>Process Tracking</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Career Path</div>
+        <div class="roles-list"><div class="role-item">Program Coordinator → Project / Program Specialist → Manager → Senior Program Manager → Director, Sustainability Programs</div></div>
+        <div class="skills-valued-group">
+<div class="section-title" style="margin-top:var(--space-4)">CliftonStrengths that may help</div>
+<div class="strengths-wrap"><span class="strength-tag cs-tag-executing">Achiever</span><span class="strength-tag cs-tag-executing">Responsibility</span><span class="strength-tag cs-tag-executing">Arranger</span><span class="strength-tag cs-tag-executing">Focus</span><span class="strength-tag cs-tag-relationship">Relator</span></div>
+<div class="skills-valued-label">Technical</div>
+<div class="skills-wrap"><span class="skill-tag">Project management tools</span><span class="skill-tag">Budget tracking</span><span class="skill-tag">KPI design & reporting</span><span class="skill-tag">Process documentation</span><span class="skill-tag">Presentation software</span></div>
+<div class="skills-valued-label">Professional</div>
+<div class="skills-wrap"><span class="skill-tag">Cross-functional coordination</span><span class="skill-tag">Moving work forward</span><span class="skill-tag">Stakeholder management</span><span class="skill-tag">Reliable follow-through</span><span class="skill-tag">Translating ideas into action</span></div>
+</div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Key Credentials</div>
+        <div class="certs-wrap"><span class='cert-tag'>Project-based work samples</span><span class='cert-tag'>CliftonStrengths articulation</span><span class='cert-tag'>Relevant sustainability certificate</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Work Context</div>
+        <div class="detail-grid" style="margin-top:var(--space-2)">
+          <div class="detail-item"><div class="detail-item-label">Common Backgrounds</div><div class="detail-item-value">Any field with strong execution and sustainability framing</div></div>
+          <div class="detail-item"><div class="detail-item-label">Typical Employers</div><div class="detail-item-value">Corporations, nonprofits, universities, consulting firms, agencies, startups</div></div>
+          <div class="detail-item"><div class="detail-item-label">Hours / Week</div><div class="detail-item-value">40-55 hrs</div></div>
+          <div class="detail-item"><div class="detail-item-label">Comp Structure</div><div class="detail-item-value">Moderate</div></div>
+        </div>
+        <div class="source-note"><strong>AU + salary note:</strong> AU mapping: KSB-612, MGMT-626, case competitions, and networking support this broad but practical route. Salary proxy: management analysts and program-management-adjacent roles; BLS lists management analysts at a 2024 median of about $101K with faster-than-average projected growth.</div>
+      </div>
+      <div class="tab-panel" id="kogod-pm">
+        <div class="kogod-panel">
+          <div class="kogod-panel-header"><span class="kogod-panel-title">How to Prepare at AU + Kogod</span></div>
+          <div class="kogod-section"><div class="kogod-section-label">Key Courses</div><div class="kogod-tags"><span class='kogod-tag'>KSB-612 Strategic Thinking for Decisions</span><span class='kogod-tag'>MGMT-626 Management Consulting Practices and Methodologies</span><span class='kogod-tag'>ACCT-688 Sustainability Reporting and Analysis</span><span class='kogod-tag'>MGMT-685 Sustainability and Technology</span></div></div>
+          <div class="kogod-section"><div class="kogod-section-label">Experiences, Publishing & Networking</div><div class="kogod-tags"><span class='kogod-tag'>Network and build relationships</span><a class='kogod-tag' href='https://kogod.american.edu/case-competition' target='_blank' rel='noopener noreferrer'>Case competitions</a><a class='kogod-tag' href='https://www.american.edu/centers/' target='_blank' rel='noopener noreferrer'>Centers and faculty projects</a><a class='kogod-tag' href='https://american.campuslabs.com/engage/organizations' target='_blank' rel='noopener noreferrer'>Cross-school student leadership opportunities</a></div></div>
+          <div class="kogod-tip"><strong>Pro tip:</strong> Students underestimate this path because the title can sound general, but it is one of the most common and practical routes into meaningful sustainability work.</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="pivot-pm">
+        <div class="pivot-panel">
+          <div class="pivot-panel-header"><span class="pivot-panel-title">Pivoting Into Sustainability Program / Project Management</span></div>
+          <div class="pivot-section"><div class="pivot-section-label">Transferable Backgrounds</div><div class="pivot-tags"><span class='pivot-tag'>Student leadership</span><span class='pivot-tag'>Operations</span><span class='pivot-tag'>Consulting</span><span class='pivot-tag'>Administration</span><span class='pivot-tag'>Community engagement</span></div></div>
+          <div class="pivot-section"><div class="pivot-section-label">Graduate Pivot Roadmap</div><ul class="pivot-steps"><li class='pivot-step'><span class='pivot-step-num'>1</span><span>Collect examples where you organized people, timelines, and deliverables.</span></li><li class='pivot-step'><span class='pivot-step-num'>2</span><span>Translate classroom and extracurricular work into project language employers recognize.</span></li><li class='pivot-step'><span class='pivot-step-num'>3</span><span>Target sustainability teams that need execution support, not only subject-matter experts.</span></li><li class='pivot-step'><span class='pivot-step-num'>4</span><span>Use networking to understand how each employer defines program versus project work.</span></li></ul></div>
+          <div class="pivot-tip">This pathway is especially good for career changers and online students with prior work experience because execution skills transfer well across sectors, and it can be a more realistic first destination than highly selective consulting or front-office finance roles.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+<article class="card" data-category="research" data-name="Research, Impact Evaluation &amp; Think Tank Analysis" data-salary-mid="95">
+  <div class="card-header">
+    <div class="card-top">
+      <div>
+        <span class="card-category-badge">Research</span>
+      </div>
+    </div>
+    <h2 class="card-title">Research, Impact Evaluation &amp; Think Tank Analysis</h2>
+    <p class="card-subtitle">Produce evidence, evaluate outcomes, and support strategy through applied research on climate, sustainability, and systems change.</p>
+    <p class="best-for"><strong>Best for students who...</strong> like deep reading, writing, evidence, interviews, analysis, and turning research into useful insight.</p>
+  </div>
+  <div class="salary-section">
+    <div class="salary-header">
+      <span class="salary-label">Directional U.S. pay context</span>
+      <span class="salary-total">62K-95K <span>typical range</span></span>
+    </div>
+    <div class="salary-levels">
+      <div class="salary-row"><span class="salary-level-name">Early career</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:38%;background:var(--color-primary);opacity:.8"></div></div><span class="salary-amount">62K-82K</span></div>
+      <div class="salary-row"><span class="salary-level-name">Experienced</span><div class="salary-bar-track"><div class="salary-bar-fill" style="width:72%;background:var(--color-primary)"></div></div><span class="salary-amount">95K-145K</span></div>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-description">These roles are common in think tanks, nonprofits, research centers, foundations, and mission-driven advisory organizations. Early-career work includes literature reviews, interviews, survey support, data analysis, memo writing, and turning research into decision-useful outputs.</p>
+  </div>
+  <div class="card-footer">
+    <div class="tab-buttons">
+      <button class="tab-btn tab-details" data-tab="details" data-card="ri">Details</button>
+      <button class="tab-btn tab-kogod" data-tab="kogod" data-card="ri"><div class="tab-dot" style="background:var(--color-kogod)"></div>Kogod Prep</button>
+      <button class="tab-btn tab-pivot" data-tab="pivot" data-card="ri"><div class="tab-dot" style="background:var(--color-pivot)"></div>Pivot Guide</button>
+    </div>
+    <div class="tab-panels" id="panels-ri">
+      <div class="tab-panel" id="details-ri">
+                <div class="section-title" style="margin-bottom:var(--space-2)">Core Skills</div>
+        <div class="skills-wrap"><span class='skill-tag'>Research Design</span><span class='skill-tag'>Qualitative + Quantitative Analysis</span><span class='skill-tag'>Writing</span><span class='skill-tag'>Synthesis</span><span class='skill-tag'>Interviewing</span><span class='skill-tag'>Presentation of Findings</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Career Path</div>
+        <div class="roles-list"><div class="role-item">Research Assistant → Analyst / Associate → Senior Analyst → Manager / Fellow → Research Director or Policy Lead</div></div>
+        <div class="skills-valued-group">
+<div class="section-title" style="margin-top:var(--space-4)">CliftonStrengths that may help</div>
+<div class="strengths-wrap"><span class="strength-tag cs-tag-strategic">Intellection</span><span class="strength-tag cs-tag-strategic">Input</span><span class="strength-tag cs-tag-strategic">Analytical</span><span class="strength-tag cs-tag-influencing">Communication</span><span class="strength-tag cs-tag-strategic">Learner</span></div>
+<div class="skills-valued-label">Technical</div>
+<div class="skills-wrap"><span class="skill-tag">Research design</span><span class="skill-tag">Qualitative & quantitative methods</span><span class="skill-tag">Literature synthesis</span><span class="skill-tag">Data visualization</span><span class="skill-tag">Grant writing basics</span></div>
+<div class="skills-valued-label">Professional</div>
+<div class="skills-wrap"><span class="skill-tag">Clear, concise writing</span><span class="skill-tag">Briefing non-expert audiences</span><span class="skill-tag">Intellectual depth</span><span class="skill-tag">Self-directed work habits</span><span class="skill-tag">Translating research into action</span></div>
+</div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Key Credentials</div>
+        <div class="certs-wrap"><span class='cert-tag'>Published article or brief</span><span class='cert-tag'>GIS/modeling exposure when relevant</span><span class='cert-tag'>Portfolio of memos or presentations</span></div>
+        <div class="section-title" style="margin-top:var(--space-4); margin-bottom:var(--space-2)">Work Context</div>
+        <div class="detail-grid" style="margin-top:var(--space-2)">
+          <div class="detail-item"><div class="detail-item-label">Common Backgrounds</div><div class="detail-item-value">Sustainability, policy, social science, business, analytics</div></div>
+          <div class="detail-item"><div class="detail-item-label">Typical Employers</div><div class="detail-item-value">Think tanks, foundations, NGOs, universities, public-interest consultancies</div></div>
+          <div class="detail-item"><div class="detail-item-label">Hours / Week</div><div class="detail-item-value">40-55 hrs</div></div>
+          <div class="detail-item"><div class="detail-item-label">Comp Structure</div><div class="detail-item-value">Usually modest</div></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="kogod-ri">
+        <div class="kogod-panel">
+          <div class="kogod-panel-header"><span class="kogod-panel-title">How to Prepare at AU + Kogod</span></div>
+          <div class="kogod-section"><div class="kogod-section-label">Key Courses</div><div class="kogod-tags"><span class='kogod-tag'>ENVS-696 Environmental Modeling</span><span class='kogod-tag'>ENVS-654 Geographic Information Systems</span><span class='kogod-tag'>KSB-612 Strategic Thinking for Decisions</span><span class='kogod-tag'>MGMT-626 Management Consulting Practices and Methodologies</span></div></div>
+          <div class="kogod-section"><div class="kogod-section-label">Experiences, Publishing & Networking</div><div class="kogod-tags"><a class='kogod-tag' href='https://kogod.american.edu/ksr' target='_blank' rel='noopener noreferrer'>Kogod Sustainability Review</a><a class='kogod-tag' href='https://www.american.edu/centers/' target='_blank' rel='noopener noreferrer'>AU centers network</a><span class='kogod-tag'>Network and build relationships</span><span class='kogod-tag'>Cross-school faculty mentorship and events</span></div></div>
+          <div class="kogod-tip"><strong>Pro tip:</strong> Publishing in KSR is especially useful here because it demonstrates both topical commitment and the ability to turn research into public-facing work.</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="pivot-ri">
+        <div class="pivot-panel">
+          <div class="pivot-panel-header"><span class="pivot-panel-title">Pivoting Into Research, Impact Evaluation &amp; Think Tank Analysis</span></div>
+          <div class="pivot-section"><div class="pivot-section-label">Transferable Backgrounds</div><div class="pivot-tags"><span class='pivot-tag'>Academia-adjacent work</span><span class='pivot-tag'>Policy</span><span class='pivot-tag'>Analytics</span><span class='pivot-tag'>Communications</span><span class='pivot-tag'>Nonprofits</span></div></div>
+          <div class="pivot-section"><div class="pivot-section-label">Graduate Pivot Roadmap</div><ul class="pivot-steps"><li class='pivot-step'><span class='pivot-step-num'>1</span><span>Choose a niche and produce 2 to 3 strong writing or research samples.</span></li><li class='pivot-step'><span class='pivot-step-num'>2</span><span>Practice translating research into concise briefs for non-academic audiences.</span></li><li class='pivot-step'><span class='pivot-step-num'>3</span><span>Use AU centers, faculty, and DC organizations to identify issue-specific communities.</span></li><li class='pivot-step'><span class='pivot-step-num'>4</span><span>Target titles like research assistant, policy analyst, and impact analyst rather than only “sustainability” titles.</span></li></ul></div>
+          <div class="pivot-tip">Students who can combine rigor with readable communication tend to rise quickly in research-oriented sustainability roles, and research or think tank work can be a strong alternative for students who explored consulting but prefer depth over constant client rotation.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+</div>
+    <div class="empty-state" id="emptyState">
+      <div class="empty-icon" aria-hidden="true">&#128269;</div>
+      <div class="empty-title">No matching functions</div>
+      <div class="empty-subtitle">Try adjusting your search or filters</div>
+    </div>
+</main>
+
+  <!-- FOOTER -->
+  
+<section class="main" style="padding-top:0; padding-bottom:var(--space-12);">
+  <div style="background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-xl); padding:var(--space-6); box-shadow:var(--shadow-sm);">
+    <div class="source-note" style="margin-top:0; padding-top:0; border-top:0;">
+      <strong>Reviewed June 2026:</strong> Salary ranges are directional and anchored to current <a href="https://www.bls.gov/ooh/" target="_blank" rel="noopener noreferrer">BLS 2024 occupational proxies</a>. Reporting language reflects current <a href="https://www.globalreporting.org/standards/" target="_blank" rel="noopener noreferrer">GRI</a> and <a href="https://www.ifrs.org/issued-standards/ifrs-sustainability-standards-navigator/" target="_blank" rel="noopener noreferrer">IFRS/ISSB</a> terminology; U.S. federal climate disclosure rules remain in flux.
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-text">Built for American University MS in Sustainability Management students exploring sustainability functions across corporate, nonprofit, government, think tank, startup, and mission-driven pathways. Reviewed June 24, 2026. Salary bands are directional and use <a href="https://www.bls.gov/ooh/" target="_blank" rel="noopener noreferrer">BLS Occupational Outlook Handbook</a> and OEWS occupational families and related role proxies such as data scientists, environmental scientists and specialists, management analysts, financial analysts, logisticians, urban and regional planners, market research analysts, and public relations specialists. CliftonStrengths fit notes are designed as reflection prompts, not rigid rules.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      // ── Theme Toggle ──
+      const toggle = document.querySelector('[data-theme-toggle]');
+      const root = document.documentElement;
+      let currentTheme = 'light';
+      root.setAttribute('data-theme', currentTheme);
+      updateToggleIcon(currentTheme);
+      toggle && toggle.addEventListener('click', () => {
+        currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', currentTheme);
+        updateToggleIcon(currentTheme);
+      });
+      function updateToggleIcon(t) {
+        if (!toggle) return;
+        toggle.setAttribute('aria-label', t === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+        toggle.innerHTML = t === 'dark'
+          ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+          : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+      }
+
+      // ── Tab System ──
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        const initialCard = btn.dataset.card;
+        const initialTab = btn.dataset.tab;
+        btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-controls', initialTab + '-' + initialCard);
+        btn.addEventListener('click', () => {
+          const card = btn.dataset.card;
+          const tab = btn.dataset.tab;
+          const panelsEl = document.getElementById('panels-' + card);
+          const allBtns = btn.closest('.tab-buttons').querySelectorAll('.tab-btn');
+          const allPanels = panelsEl.querySelectorAll('.tab-panel');
+
+          // If clicking an already-active tab, close the panel
+          const isAlreadyActive = btn.classList.contains('active');
+          allBtns.forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-expanded', 'false');
+          });
+          allPanels.forEach(p => p.classList.remove('active'));
+
+          if (isAlreadyActive) {
+            panelsEl.classList.remove('open');
+          } else {
+            btn.classList.add('active');
+            btn.setAttribute('aria-expanded', 'true');
+            panelsEl.classList.add('open');
+            const targetPanel = document.getElementById(tab + '-' + card);
+            if (targetPanel) targetPanel.classList.add('active');
+          }
+        });
+      });
+
+      document.querySelectorAll('.tab-panels').forEach(panelsEl => {
+        if (panelsEl.querySelector('.panel-close')) return;
+        const closeBtn = document.createElement('button');
+        closeBtn.type = 'button';
+        closeBtn.className = 'panel-close';
+        closeBtn.textContent = 'Close';
+        closeBtn.setAttribute('aria-label', 'Close this card section');
+        panelsEl.prepend(closeBtn);
+        closeBtn.addEventListener('click', () => {
+          const cardEl = panelsEl.closest('.card');
+          const allBtns = cardEl ? cardEl.querySelectorAll('.tab-btn') : [];
+          const allPanels = panelsEl.querySelectorAll('.tab-panel');
+          allBtns.forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-expanded', 'false');
+          });
+          allPanels.forEach(p => p.classList.remove('active'));
+          panelsEl.classList.remove('open');
+        });
+      });
+
+      // ── Filter & Sort ──
+      const cards = Array.from(document.querySelectorAll('.card'));
+      const grid = document.getElementById('cardsGrid');
+      const searchInput = document.getElementById('searchInput');
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const sortSelect = document.getElementById('sortSelect');
+      const emptyState = document.getElementById('emptyState');
+      const resultsCount = document.getElementById('resultsCount');
+      const originalOrder = [...cards];
+      let activeFilter = 'all', activeSort = 'default', searchTerm = '';
+
+      function updateDisplay() {
+        let visible = [];
+        cards.forEach(card => {
+          const matchesFilter = activeFilter === 'all' || card.dataset.category === activeFilter;
+          const matchesSearch = !searchTerm || card.textContent.toLowerCase().includes(searchTerm);
+          if (matchesFilter && matchesSearch) { card.classList.remove('hidden'); visible.push(card); }
+          else card.classList.add('hidden');
+        });
+        const sorted = [...visible];
+        if (activeSort === 'salary-high') sorted.sort((a, b) => +b.dataset.salaryMid - +a.dataset.salaryMid);
+        else if (activeSort === 'salary-low') sorted.sort((a, b) => +a.dataset.salaryMid - +b.dataset.salaryMid);
+        else if (activeSort === 'name-az') sorted.sort((a, b) => a.dataset.name.localeCompare(b.dataset.name));
+        else if (activeSort === 'name-za') sorted.sort((a, b) => b.dataset.name.localeCompare(a.dataset.name));
+        else sorted.sort((a, b) => originalOrder.indexOf(a) - originalOrder.indexOf(b));
+        sorted.forEach(c => grid.appendChild(c));
+        resultsCount.textContent = visible.length === cards.length ? cards.length + ' functions' : visible.length + ' of ' + cards.length + ' functions';
+        emptyState.classList.toggle('visible', visible.length === 0);
+      }
+
+      filterBtns.forEach(btn => btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeFilter = btn.dataset.filter;
+        updateDisplay();
+      }));
+      sortSelect.addEventListener('change', () => {
+        activeSort = sortSelect.value;
+        updateDisplay();
+        if (activeSort.startsWith('salary')) {
+          cards.forEach(c => { if (!c.classList.contains('hidden')) { c.classList.remove('sort-highlight'); void c.offsetWidth; c.classList.add('sort-highlight'); c.addEventListener('animationend', () => c.classList.remove('sort-highlight'), { once: true }); } });
+        }
+      });
+      let debounce;
+      searchInput.addEventListener('input', () => {
+        clearTimeout(debounce);
+        debounce = setTimeout(() => { searchTerm = searchInput.value.toLowerCase().trim(); updateDisplay(); }, 150);
+      });
+
+      updateDisplay();
+    })();
+  </script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script><script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
